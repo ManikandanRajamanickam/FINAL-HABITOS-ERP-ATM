@@ -346,3 +346,11 @@ Session ID: d0d3491abb8e5d6ef9028eeef2b82639
 2019-04-24 19:08:02,020 -  Habitos - Utensils -ERROR - Verify that if the user can enter the vessels name
 2019-04-24 19:08:02,029 -  Habitos - Utensils -ERROR - user can enter the description
 2019-04-24 19:08:02,040 -  Habitos - Utensils -ERROR - Verify that if the vessel is successfully created
+2019-04-24 19:15:57,187 -  Habitos - Cook Sheet -INFO - browser gets valid ip address
+2019-04-24 19:16:12,186 -  Habitos - Cook Sheet -INFO - Verify that if click cook sheet it should redirect to related  screen
+2019-04-24 19:16:12,265 -  Habitos - Cook Sheet -INFO - Verify that if the date is presented in date field
+2019-04-24 19:16:12,532 -  Habitos - Cook Sheet -INFO - Verify that if the client name is correctly displayed
+2019-04-24 19:16:13,101 -  Habitos - Cook Sheet -INFO - Verify that if the meal time is correctly displayed
+2019-04-24 19:16:13,353 -  Habitos - Cook Sheet -INFO - Verify that if the receipe1 name is correctly displayed in cook sheet
+2019-04-24 19:16:13,604 -  Habitos - Cook Sheet -INFO - Verify that if the receipe2 name is correctly displayed in cook sheet
+2019-04-24 19:16:13,895 -  Habitos - Cook Sheet -INFO - Verify that if the receipe3 name is correctly displayed in cook sheet
