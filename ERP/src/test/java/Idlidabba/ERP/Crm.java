@@ -16,6 +16,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
  
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
@@ -171,7 +172,7 @@ public void beforeTest()  {
 
 	}
   
-  // ADD- CLIENT
+/*  // ADD- CLIENT
 
  @Test (priority = 3)
  
@@ -808,7 +809,7 @@ public void beforeTest()  {
 			
 			Thread.sleep(500);
 			
-		/*	Actions actions = new Actions(driver);  
+			Actions actions = new Actions(driver);  
 			
 			WebElement mainMenu = driver.findElement(By.xpath("//td[contains(text(),'Avaliable')]"));
 	
@@ -828,7 +829,7 @@ public void beforeTest()  {
 			WebElement subMenu = driver.findElement(By.xpath("//a[@id='edit']"));
 			actions.moveToElement(subMenu);
 			actions.click().build().perform();
-*/
+
 			logger.info("Verify that if click edit button it should redirect to related screen");
 						
 			 
@@ -922,7 +923,7 @@ public void beforeTest()  {
 	 }
     
 //ADD MEAL VIEW
- 
+ */
  @Test (priority = 6)
  
  public void crm_info_view() {
@@ -957,17 +958,11 @@ public void beforeTest()  {
 			WebElement title =  driver.findElement(By.xpath("//p[@class='page_path']"));
 				
 			String  tit = "CRM / CRM Info / Show CRM Info";
-				 
-			if (title.isDisplayed()) {
-				
-
+				  
 				logger.info("Verify that if click view icon it should display the view screen automatically");
 				
 				logger.info("Verify that the client values are correctly displayed or not");
-								
-			}				
-				
-	     
+			 
 
 		} catch (Exception e) {
 

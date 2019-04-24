@@ -329,3 +329,20 @@ Session ID: d0d3491abb8e5d6ef9028eeef2b82639
 2019-04-24 18:16:22,730 [main] INFO Habitos - LOGIN - Verify that if the user can enter the user name
 2019-04-24 18:16:22,896 [main] INFO Habitos - LOGIN - Verify that if the password fields get focused
 2019-04-24 18:16:23,140 [main] INFO Habitos - LOGIN - Verify that user can login with valid credentials
+2019-04-24 19:06:41,955 [main] INFO Habitos - CRM _ INFO - Verify that if click CRM info it should redirect to crm info index screen 
+2019-04-24 19:06:49,457 [main] INFO Habitos - CRM _ INFO - VIEW  - Verify that if click view icon it should display the view screen automatically
+2019-04-24 19:06:49,459 [main] INFO Habitos - CRM _ INFO - VIEW  - Verify that the client values are correctly displayed or not
+2019-04-24 19:07:41,286 [main] INFO  Habitos - Utensils - browser gets open
+2019-04-24 19:07:42,888 [main] INFO  Habitos - Utensils - browser gets valid ip address
+2019-04-24 19:07:51,097 [main] INFO  Habitos - Utensils - Verify  that if click master menu it getting to collapse
+2019-04-24 19:07:57,671 [main] INFO  Habitos - Utensils - Verify that if Utensils menu it should redirect to related  screen
+2019-04-24 19:07:59,521 [main] INFO  Habitos - Utensils - If click add button is should redirect to add new screen
+2019-04-24 19:08:00,004 [main] INFO  Habitos - Utensils - can enter the vessels name
+2019-04-24 19:08:00,490 [main] INFO  Habitos - Utensils - user can enter the description
+2019-04-24 19:08:01,944 [main] INFO  Habitos - Utensils - Verify that if the user can click the submit button
+2019-04-24 19:08:01,990 [main] ERROR  Habitos - Utensils - Verify that if the user can click the submit button
+2019-04-24 19:08:01,991 [main] ERROR  Habitos - Utensils - Verify that if the utensil are successfully created
+2019-04-24 19:08:02,011 [main] ERROR  Habitos - Utensils - If click add button is should redirect to add new screen
+2019-04-24 19:08:02,020 [main] ERROR  Habitos - Utensils - Verify that if the user can enter the vessels name
+2019-04-24 19:08:02,029 [main] ERROR  Habitos - Utensils - user can enter the description
+2019-04-24 19:08:02,040 [main] ERROR  Habitos - Utensils - Verify that if the vessel is successfully created

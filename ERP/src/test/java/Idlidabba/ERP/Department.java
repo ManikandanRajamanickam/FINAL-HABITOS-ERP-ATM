@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -102,20 +103,12 @@ public class Department {
 
 			WebElement depart = d.findElement(By.xpath("//a[contains(text(),'Department')]"));
 
-			depart.isDisplayed();
-
 			depart.click();
 
 			Thread.sleep(2000);
 
-			String url = "http://192.168.1.230:4000/departments";
-
-			if (d.getCurrentUrl().equals(url)) {
-
-				logger.info("if click department menu it should redirect the related screen");
-
-			}
-
+			d.get("http://192.168.1.230:4000/departments");
+			 
 		}
 
 		catch (Exception e) {

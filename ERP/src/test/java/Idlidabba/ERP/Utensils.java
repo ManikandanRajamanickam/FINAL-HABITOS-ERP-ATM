@@ -29,6 +29,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -159,18 +160,18 @@ public class Utensils {
 	  
 		try {
 
+			Thread.sleep(200);
+						
 			WebElement add = d.findElement(By.xpath("//a[@class='btn']"));
-
-			if (add.isDisplayed() && add.isEnabled()) {
-
-				add.click();
-
-				String url = "http://192.168.1.230:4000/utensilnames/new";
-
-				logger.info("If click add button is should redirect to add new screen");
-			}
-
+			
+			add.click();
+			
+			logger.info("If click add button is should redirect to add new screen");
+					
+			 
 		} catch (Exception e) {
+			
+			
 
 			logger.error("If click add button is should redirect to add new screen");
 

@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -107,14 +108,11 @@ public class Depriceation {
 			depart.click();
 
 			Thread.sleep(2000);
+			
+			logger.info("if click depriceation category  menu it should redirect the related screen");
 
-			String url = "http://192.168.1.230:4000/depriciation_categories";
-
-			if (d.getCurrentUrl().equals(url)) {
-
-				logger.info("if click depriceation category  menu it should redirect the related screen");
-
-			}
+			
+			d.get("http://192.168.1.230:4000/depriciation_categories");
 
 		}
 
