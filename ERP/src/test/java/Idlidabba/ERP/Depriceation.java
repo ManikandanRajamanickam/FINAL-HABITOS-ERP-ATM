@@ -17,6 +17,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -172,9 +173,21 @@ public class Depriceation {
 
 			Thread.sleep(2000);
 
-			WebElement submit = d.findElement(By.xpath("//input[@value='submit']"));
+			logger.info("Verify that user can enter the depriciation category in input field");
 
-		//	submit.isDisplayed();
+		} catch (Exception e) {
+
+			logger.error("Verify that user can enter the depriciation category in input field");
+		}
+			
+				
+		try {
+			
+			Thread.sleep(200);
+			
+			WebElement submit = d.findElement(By.xpath("//input[@name='commit']"));
+
+			 submit.isDisplayed();
 
 			Thread.sleep(100);
 
@@ -195,9 +208,9 @@ public class Depriceation {
 
 		try {
 
-			WebElement srch = d.findElement(By.xpath("//input[@type='search']"));
+			WebElement srch = d.findElement(By.xpath("//label[contains(text(),'Search:')]//input"));
 
-			// srch.isDisplayed();
+			srch.isDisplayed();
 
 			srch.sendKeys("Damaging");
  
