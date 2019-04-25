@@ -32,6 +32,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -181,7 +182,7 @@ public class Utensils {
 		}
 		
 		
-		String url = "http://192.168.1.230:4000/utensilnames";
+		String url = "http://192.168.1.230:4000/utensilnames/new";
 		
 		if (d.getCurrentUrl().equals(url)) {
 			

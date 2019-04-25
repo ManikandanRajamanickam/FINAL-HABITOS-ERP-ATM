@@ -403,3 +403,38 @@ Session ID: d0d3491abb8e5d6ef9028eeef2b82639
 2019-04-25 11:23:09,012 -  Habitos - Utensils -ERROR - Verify that if the user can enter the vessels name
 2019-04-25 11:23:09,027 -  Habitos - Utensils -ERROR - user can enter the description
 2019-04-25 11:23:09,059 -  Habitos - Utensils -ERROR - Verify that if the vessel is successfully created
+2019-04-25 12:56:15,474 -  Habitos - Vessel Planner -INFO - Verify  that if click master menu it getting to collapse
+2019-04-25 12:56:21,832 -  Habitos - Vessel Planner -INFO - Verify that if click menu planner menu it should redirect to menu planner screen
+2019-04-25 12:56:25,148 -  Habitos - Vessel Planner -INFO - Verify that user can click the date into date picker
+2019-04-25 12:56:25,243 -  Habitos - Vessel Planner -ERROR - Verify that user can click the date into date picker
+2019-04-25 12:56:26,446 -  Habitos - Vessel Planner -INFO - user can select the client type
+2019-04-25 12:56:27,710 -  Habitos - Vessel Planner -INFO - user can select  the meal course
+2019-04-25 12:56:34,816 -  Habitos - Vessel Planner -INFO - Verify the client datas is correct or not
+2019-04-25 12:56:40,076 -  Habitos - Vessel Planner -INFO - Verify that user can select the particular utensils
+2019-04-25 12:56:40,112 -  Habitos - Vessel Planner -ERROR - Verify that user can select the particular utensils
+2019-04-25 12:56:40,127 -  Habitos - Vessel Planner -ERROR - Verify that user can select the Utensils Id's 
+2019-04-25 12:56:40,157 -  Habitos - Vessel Planner -ERROR - Verify that user can select the particular utensils
+2019-04-25 12:56:40,182 -  Habitos - Vessel Planner -ERROR - Verify that user can select the Utensils Id's 
+2019-04-25 12:56:40,205 -  Habitos - Vessel Planner -ERROR - Verify that user can select the particular utensils
+2019-04-25 12:56:40,229 -  Habitos - Vessel Planner -ERROR - Verify that user can select the Utensils Id's 
+2019-04-25 12:56:40,254 -  Habitos - Vessel Planner -ERROR - Verify that user can select the particular utensils
+2019-04-25 12:56:40,275 -  Habitos - Vessel Planner -ERROR - Verify that user can select the Utensils Id's 
+2019-04-25 12:56:40,343 -  Habitos - Vessel Planner -ERROR - Verify that if user can click the submit button
+2019-04-25 12:56:40,346 -  Habitos - Vessel Planner -ERROR - Can't able to planning the vessels
+2019-04-25 12:58:11,393 -  Habitos - Vessel Planner -INFO - Verify  that if click master menu it getting to collapse
+2019-04-25 12:58:16,169 -  Habitos - Vessel Planner -INFO - Verify that if click menu planner menu it should redirect to menu planner screen
+2019-04-25 12:58:19,370 -  Habitos - Vessel Planner -INFO - Verify that user can click the date into date picker
+2019-04-25 12:58:19,439 -  Habitos - Vessel Planner -ERROR - Verify that user can click the date into date picker
+2019-04-25 12:58:20,600 -  Habitos - Vessel Planner -INFO - user can select the client type
+2019-04-25 12:58:21,825 -  Habitos - Vessel Planner -INFO - user can select  the meal course
+2019-04-25 12:58:28,964 -  Habitos - Vessel Planner -INFO - Verify the client datas is correct or not
+2019-04-25 12:58:33,746 -  Habitos - Vessel Planner -INFO - Verify that user can select the particular utensils
+2019-04-25 12:58:34,781 -  Habitos - Vessel Planner -INFO - Verify that user can select the particular utensils
+2019-04-25 12:58:35,717 -  Habitos - Vessel Planner -INFO - Verify that user can select the Utensils Id's 
+2019-04-25 12:58:36,637 -  Habitos - Vessel Planner -INFO - Verify that user can select the particular utensils
+2019-04-25 12:58:37,647 -  Habitos - Vessel Planner -INFO - Verify that user can select the Utensils Id's 
+2019-04-25 12:58:38,778 -  Habitos - Vessel Planner -INFO - Verify that user can select the particular utensils
+2019-04-25 12:58:39,981 -  Habitos - Vessel Planner -INFO - Verify that user can select the Utensils Id's 
+2019-04-25 12:58:41,114 -  Habitos - Vessel Planner -INFO - Verify that user can select the particular utensils
+2019-04-25 12:58:42,279 -  Habitos - Vessel Planner -INFO - Verify that user can select the Utensils Id's 
+2019-04-25 12:58:43,124 -  Habitos - Vessel Planner -INFO - Verify that if user can click the submit button
