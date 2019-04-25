@@ -30,6 +30,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.Test; 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
@@ -165,13 +166,20 @@ public class Cooksheet {
 			
 			d.manage().window().maximize();
 			
+			
+			WebElement date = d.findElement(By.xpath("//input[@id='txtFrom']"));
+			
+			date.click();
+			
+			date.sendKeys(Keys.CONTROL, Keys.ARROW_UP);
+			
 			Thread.sleep(2000);
+			
 			
 			File screenshotFile = ((TakesScreenshot) d).getScreenshotAs(OutputType.FILE);
 
 			FileUtils.copyFile(screenshotFile, new File("C:\\Screenshots\\mc.jpg"));
-
-			WebElement date = d.findElement(By.xpath("//input[@id='txtFrom']"));
+			
 
 			logger.info("Verify that if the date is presented in date field");
 
