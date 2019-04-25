@@ -29,23 +29,29 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.Test; 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.PropertyConfigurator;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.ClickAction;
+import org.openqa.selenium.remote.ScreenshotException;
 import org.testng.annotations.AfterTest;
 
 public class Cooksheet {
@@ -124,17 +130,21 @@ public class Cooksheet {
 		}
 
 		try {
-
-			Thread.sleep(2000);
-
-			WebElement cooksht = d
+   
+			/*WebElement cooksht = d
 					.findElement(By.xpath("//a[@class='list-group-item'][contains(text(),'Cook Sheet')]"));
 
-			cooksht.click();
+			cooksht.click();*/
 
 			Thread.sleep(2000);
 
-			String url = "http://192.168.1.230:4000/menu_customers/cook_sheet_edit";
+			d.get("http://192.168.1.230:4000/menu_customers/cook_sheet_edit");
+			
+			Thread.sleep(2000);
+			
+			File screenshotFile = ((TakesScreenshot) d).getScreenshotAs(OutputType.FILE);
+
+			FileUtils.copyFile(screenshotFile, new File("C:\\Screenshots\\maxi.jpg"));
 
 			logger.info("Verify that if click cook sheet it should redirect to related  screen");
 
@@ -152,6 +162,14 @@ public class Cooksheet {
 		// Values Checking
 
 		try {
+			
+			d.manage().window().maximize();
+			
+			Thread.sleep(2000);
+			
+			File screenshotFile = ((TakesScreenshot) d).getScreenshotAs(OutputType.FILE);
+
+			FileUtils.copyFile(screenshotFile, new File("C:\\Screenshots\\mc.jpg"));
 
 			WebElement date = d.findElement(By.xpath("//input[@id='txtFrom']"));
 
@@ -173,9 +191,9 @@ public class Cooksheet {
 
 		} catch (Exception e) {
 
-			WebElement submit = d.findElement(By.xpath("//*[@id=\"report\"]"));
+			/*WebElement submit = d.findElement(By.xpath("//*[@id=\"report\"]"));
 
-			submit.click();
+			submit.click();*/
 
 			logger.error("Verify that if the cook sheet contain the values");
 

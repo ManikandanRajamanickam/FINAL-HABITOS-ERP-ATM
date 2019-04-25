@@ -118,15 +118,25 @@ public class Utensils {
 
 			sidebar.click();
 
-			logger.info("Verify  that if click master menu it getting to collapse");
-
 			WebElement masters = d.findElement(By.xpath("//span[contains(text(),'Masters')]"));
 
-			if (masters.isDisplayed()) {
+			masters.click();
 
-				masters.click();
+			logger.info("Verify  that if click master menu it getting to collapse");
 
-			}
+		}
+
+		catch (Exception e) {
+			
+			logger.error("Verify  that if click master menu it getting to collapse");
+
+		}
+		
+		
+
+		try
+
+		{
 
 			Thread.sleep(2000);
 
