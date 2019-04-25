@@ -16,6 +16,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -160,7 +161,19 @@ public class Department {
 			depet.sendKeys("Dispatched");
 
 			Thread.sleep(200);
+			
+			logger.info("Verify that user can enter the department name in input field");
+		
+		} catch (Exception e) {
 
+			logger.error("Verify that user can enter the department name in input field");
+
+		}
+
+		
+
+			try {
+			
 			WebElement submit = d.findElement(By.xpath("//input[@value='submit']"));
 
 			Thread.sleep(100);
@@ -168,7 +181,7 @@ public class Department {
 			submit.click();
 
 			logger.info("If click submit button it should redirect to index screen");
-
+			
 		} catch (Exception e) {
 
 			logger.error("If click submit button it should redirect to index screen");
@@ -190,6 +203,8 @@ public class Department {
 			Thread.sleep(200);
 
 			WebElement filter = d.findElement(By.xpath("//td[@class='sorting_1']"));
+			
+			filter.isDisplayed();
 
 			logger.info("Department is successfully added");
 
