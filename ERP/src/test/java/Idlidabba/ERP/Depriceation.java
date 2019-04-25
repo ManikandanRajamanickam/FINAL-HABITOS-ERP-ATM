@@ -23,6 +23,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.io.File;
@@ -175,6 +176,12 @@ public class Depriceation {
 			depet.sendKeys("Damaging");
 
 			Thread.sleep(200);
+			
+			depet.sendKeys(Keys.TAB);
+			
+			Thread.sleep(200);
+			
+			depet.sendKeys(Keys.TAB);
 
 		logger.info("Verify that user can enter the depriciation category in input field");
 		}
