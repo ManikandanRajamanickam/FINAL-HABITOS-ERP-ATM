@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="Idlidabba.ERP.Utensils"/>
+      <class name="Idlidabba.ERP.Department"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
