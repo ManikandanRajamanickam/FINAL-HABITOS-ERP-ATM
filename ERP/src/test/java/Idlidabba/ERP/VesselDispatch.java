@@ -31,6 +31,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -118,45 +119,50 @@ public class VesselDispatch {
 
 			sidebar.click();
 
-			logger.info("Verify  that if click master menu it getting to collapse");
-
 			WebElement masters = d.findElement(By.xpath("//span[contains(text(),'Masters')]"));
 
 			masters.click();
 
 			Thread.sleep(2000);
 
-			try {
-				
-				// side bar scroll
-				
-				WebElement  sbar  = d.findElement(By.xpath("//div[@class='mCSB_dragger_bar']"));
-				
-				for (int i = 0; i <= 3; i++) {
+			logger.info("Verify  that if click master menu it getting to collapse");
 
-					sbar.sendKeys(Keys.ARROW_DOWN);
-						
-				}
-
-				WebElement vessels = d.findElement(By.xpath("//a[contains(text(),'Vessel Dispatch')]"));
-
-				vessels.click();
-
-				Thread.sleep(2000);
-
-			} catch (Exception e) {
-			
-				d.get("http://192.168.1.230:4000/vesselplanners/vessel_dispatch");
-
-			}
-							
 		}
-		
+
 		catch (Exception e) {
 
 			logger.error("Verify  that if click master menu it getting to collapse");
 		}
 		
+		
+		
+		try {
+
+		d.get("http://192.168.1.230:4000/vesselplanners/vessel_dispatch");
+
+		// logger.info("verify that if click vessel dispatch menu it should redirect to related screen"); 
+
+		} catch (Exception e) {
+
+		 	logger.error("verify that if click vessel dispatch menu it should redirect to related screen"); 
+
+		}
+	
+		String url = "http://192.168.1.230:4000/vesselplanners/vessel_dispatch";
+		
+		if (d.getCurrentUrl().equals(url)) {
+			
+			
+			logger.info("verify that if click vessel dispatch menu it should redirect to related screen"); 
+			
+			
+		} else {
+			
+			logger.error("verify that if click vessel dispatch menu it should redirect to related screen"); 
+
+		}
+		
+	 	
 	}
 		
 	@Test (priority = 3)
@@ -296,7 +302,7 @@ public class VesselDispatch {
 				
 				qty.click();
 				
-				for (int i = 0; i <=5; i++) {
+				for (int i = 0; i <=4; i++) {
 					
 					qty.sendKeys(Keys.ARROW_LEFT);
 					

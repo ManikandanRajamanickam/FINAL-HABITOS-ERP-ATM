@@ -27,6 +27,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.util.Date;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
@@ -116,7 +117,7 @@ import org.testng.annotations.AfterTest;
 
 	@Test(priority = 2)
 
-	public void vessels_plan() {
+	public void vessels_plan() throws InterruptedException {
 
 		try {
 
@@ -126,19 +127,23 @@ import org.testng.annotations.AfterTest;
 
 			sidebar.click();
 
-			logger.info("Verify  that if click master menu it getting to collapse");
-
 			WebElement masters = d.findElement(By.xpath("//span[contains(text(),'Masters')]"));
 
 			masters.click();
 
+			logger.info("Verify  that if click master menu it getting to collapse");
+
+		} catch (Exception e) {
+
+			logger.error("Verify  that if click master menu it getting to collapse");
+
+		}
+			
+				 
 			Thread.sleep(2000);
-
-			WebElement vessels = d.findElement(By.xpath("//a[contains(text(),'Vessel Planner')]"));
-			vessels.click();
-
-			Thread.sleep(2000);
-
+			
+			d.get("http://192.168.1.230:4000/vesselplanners/new1");
+			
 			String url = "http://192.168.1.230:4000/vesselplanners/new1";
 
 			if (d.getCurrentUrl().equals(url)) {
@@ -149,14 +154,10 @@ import org.testng.annotations.AfterTest;
 
 				logger.error("Verify that if click menu planner menu  it should redirect to menu planner screen");
 			}
-
-		} catch (Exception e) {
-
-			logger.error("Verify  that if click master menu it getting to collapse");
-		}
-
+	
 	}
-
+	
+	
 	@Test(priority = 3)
 	
 	public void countcheck() {
@@ -300,15 +301,15 @@ import org.testng.annotations.AfterTest;
 
 	public void qtysplit() {
 
-		try {
+			try {
 
-			Thread.sleep(2000);
+				Thread.sleep(2000);
 
-			WebElement Midaysnaks = d.findElement(By.xpath("//form[@action='/vesselplanners/index1']"));
+				WebElement Midaysnaks = d.findElement(By.xpath("//form[@action='/vesselplanners/index1']"));
 
-			Thread.sleep(200);
+				Thread.sleep(200);
 
-			if (Midaysnaks.isDisplayed()) {
+				Midaysnaks.isDisplayed();
 
 				Midaysnaks.click();
 
@@ -318,7 +319,7 @@ import org.testng.annotations.AfterTest;
 
 				qty.isDisplayed();
 
-				for (int i = 0; i <= 5 ; i++) {
+				for (int i = 0; i <= 4 ; i++) {
 
 					qty.sendKeys(Keys.ARROW_LEFT);
 
@@ -338,7 +339,7 @@ import org.testng.annotations.AfterTest;
 
 				logger.info("Verify that user can select the particular utensils");
 
-			}
+			
 
 		} catch (Exception e) {
 
@@ -366,9 +367,9 @@ import org.testng.annotations.AfterTest;
 			uten.sendKeys("30");
 
 			uten.sendKeys(Keys.ENTER);
-
+						
 			Thread.sleep(200);
-
+			
 			logger.info("Verify that user can select the particular utensils");
 
 		} catch (Exception e) {

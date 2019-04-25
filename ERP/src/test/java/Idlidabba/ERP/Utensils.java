@@ -31,6 +31,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -141,28 +142,25 @@ public class Utensils {
 			Thread.sleep(2000);
 
 			WebElement utensils = d.findElement(By.xpath("//a[contains(text(),'Utensil Name')]"));
-
-			if (utensils.isDisplayed()) {
-
-				utensils.click();
-
-			}
+			 
+			utensils.click();
+			
+			logger.info("Verify that if the utensil menu is present under the master");
 
 			Thread.sleep(2000);
 
-			String url = "http://192.168.1.230:4000/utensilnames";
+			d.get("http://192.168.1.230:4000/utensilnames");
 
-			if (d.getCurrentUrl().equals(url)) {
-
-				logger.info("Verify that if Utensils menu it should redirect to related  screen");
-
-			}
-
+			logger.info("Verify that if Utensils menu it should redirect to related  screen");
+			
 		} catch (Exception e) {
 
 			logger.info("Verify that if Utensils menu it should redirect to related  screen");
 
 		}
+		
+		
+		
 
 		// Add utensils
 
@@ -173,28 +171,42 @@ public class Utensils {
 			WebElement add = d.findElement(By.xpath("//a[@class='btn']"));
 
 			add.click();
-
-			logger.info("If click add button is should redirect to add new screen");
+			
+			logger.info("Verify that if the add button is present in utensil index page");
 
 		} catch (Exception e) {
 
-			logger.error("If click add button is should redirect to add new screen");
+			logger.info("Verify that if the add button is present in utensil index page");
 
 		}
+		
+		
+		String url = "http://192.168.1.230:4000/utensilnames";
+		
+		if (d.getCurrentUrl().equals(url)) {
+			
+			logger.info("If click add new button it should redirect to add new screen");
+			
+		} else {
 
+			logger.error("If click add new button it should redirect to add new screen");
+		}
+		
+
+		
 		// Enter the new name
 
 		try {
 
 			WebElement add = d.findElement(By.id("utensilname_name"));
 
-			if (add.equals(d.switchTo().activeElement())) {
+			 add.isDisplayed();
 
-				add.sendKeys("30 Ltr Hot pack");
+			add.sendKeys("30 Ltr Hot pack");
 
-				logger.info("can enter the vessels name");
+			logger.info("can enter the vessels name");
 
-			}
+			 
 
 		} catch (Exception e) {
 
@@ -207,6 +219,8 @@ public class Utensils {
 		try {
 
 			WebElement desc = d.findElement(By.xpath("//textarea[@id='utensilname_description']"));
+			
+			desc.isDisplayed();
 
 			desc.sendKeys("30 Ltr Hot pack");
 
@@ -224,14 +238,23 @@ public class Utensils {
 
 			WebElement submit = d.findElement(By.xpath("//input[@value='submit']"));
 
+			submit.isDisplayed();
+
 			submit.click();
 
 			Thread.sleep(200);
 
 			logger.info("Verify that if the user can click the submit button");
 
-			String url = "http://192.168.1.230:4000/utensilnames";
+		} catch (Exception e) {
 
+			logger.error("Verify that if the user can click the submit button");
+
+		}
+
+				
+		try {
+			
 			WebElement srch = d.findElement(By.xpath("//input[@type='search']"));
 
 			srch.sendKeys("30 Ltr Hot pack");
@@ -243,20 +266,20 @@ public class Utensils {
 			// String val = "30 Ltr Hot pack";
 
 			values.isDisplayed();
-
+			
 			logger.info("Verify that if the utensil are successfully created");
-
+			
 		} catch (Exception e) {
-
-			logger.error("Verify that if the user can click the submit button");
-
+		 
 			logger.error("Verify that if the utensil are successfully created");
-
+			
 		}
-
+		
+		
 	}
 
 	@Test(priority = 3)
+	
 	public void utensil_2() {
 
 		// ADD SCREEN
@@ -266,6 +289,8 @@ public class Utensils {
 			Thread.sleep(200);
 
 			WebElement add = d.findElement(By.xpath("//a[@class='btn']"));
+			
+			add.isDisplayed();
 
 			add.click();
 
@@ -284,6 +309,8 @@ public class Utensils {
 			Thread.sleep(200);
 
 			WebElement add = d.findElement(By.id("utensilname_name"));
+			
+			add.isDisplayed();
 
 			add.sendKeys("21 Ltr Hot pack");
 
@@ -300,6 +327,8 @@ public class Utensils {
 		try {
 
 			WebElement desc = d.findElement(By.xpath("//textarea[@id='utensilname_description']"));
+			
+			desc.isDisplayed();
 
 			desc.sendKeys("21 Ltr Hot pack");
 
@@ -317,6 +346,8 @@ public class Utensils {
 
 			WebElement submit = d.findElement(By.xpath("//input[@value='submit']"));
 
+			submit.isDisplayed();
+			
 			submit.click();
 
 			Thread.sleep(200);

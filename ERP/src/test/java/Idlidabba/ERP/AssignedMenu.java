@@ -23,6 +23,8 @@ import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
@@ -178,15 +180,7 @@ public class AssignedMenu {
 			logger.info("Verify  that if click date picker it should open the calender");
 
 			Thread.sleep(200);
-
-			/*
-			 * WebElement pmonth =
-			 * d.findElement(By.xpath("//span[@class='flatpickr-prev-month']"));
-			 * pmonth.click();
-			 */
-
-			Thread.sleep(2000);
-
+ 
 			WebElement fdate = d.findElement(By.xpath(" //div[@class='flatpickr-days']//span[2]"));
 
 			fdate.click();

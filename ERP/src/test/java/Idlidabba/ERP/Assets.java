@@ -31,6 +31,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.log4testng.Logger;
 import org.testng.annotations.BeforeTest;
 
@@ -112,12 +113,26 @@ public class Assets {
 			WebElement sidebar = d.findElement(By.id("sidebarCollapse"));
 
 			sidebar.click();
-
-			logger.info("Verify  that if click master menu it getting to collapse");
-
+			
+			Thread.sleep(200);
+		  
 			WebElement facility = d.findElement(By.xpath("//span[contains(text(),'Facility Management')]"));
-
+			
+			facility.isDisplayed();
+			
 			facility.click();
+			
+			logger.info("Verify that if click facility menu it should opent the menu");
+
+			
+		} catch (Exception e) {
+
+			logger.error("Verify that if click facility menu it should opent the menu");
+
+		}
+			
+		
+		try {
 
 			Thread.sleep(2000);
 
@@ -129,42 +144,16 @@ public class Assets {
 
 			Thread.sleep(2000);
 
-			String url = "http://192.168.1.230:4000/utensils";
-
-			if (d.getCurrentUrl().equals(url)) {
-
-				logger.info("Verify that if Utensils menu it should redirect to related  screen");
-
-			}
+			logger.info("Verify that if click asset menu it should redirect to related  screen");
 
 		} catch (Exception e) {
 
-			logger.info("Verify that if Utensils menu it should redirect to related  screen");
+			logger.error("Verify that if click asset menu it should redirect to related  screen");
 
 		}
-
-		// Add Assets
-
-	 	try {
-
-			WebElement add = d.findElement(By.xpath("//a[@class='btn']"));
-
-			if (add.isDisplayed() && add.isEnabled()) {
-
-				add.click();
-
-				String url = "http://192.168.1.230:4000/utensils/new";
-
-				logger.info("If click add button is should redirect to add new screen");
-			}
-
-		} catch (Exception e) {
-
-			logger.error("If click add button is should redirect to add new screen");
-
-		} 
-
+		 			   
 	}
+	
    
 	// ADD ASSET - 1
 	
@@ -172,6 +161,41 @@ public class Assets {
 
 	public void Add_Assets() {
 
+		// Add Assets
+
+		try {
+
+			WebElement add = d.findElement(By.xpath("//a[@class='btn']"));
+
+			add.isDisplayed();
+
+			add.click();
+
+			logger.info("Verify that if the add button is present ");
+
+		} catch (Exception e) {
+
+			logger.error("Verify that if the add button is present ");
+
+		}
+	
+		
+		d.get("http://192.168.1.230:4000/utensils/new");
+		
+		String url = "http://192.168.1.230:4000/utensils/new";
+		
+		if ( d.getCurrentUrl().equals(url)) {
+  
+			logger.info("If click add button is should redirect to add new screen");
+
+			
+		} else {
+			
+			logger.error("If click add button is should redirect to add new screen");
+
+		}
+		
+		
 		// Facility Add
 
 		try {
@@ -182,27 +206,26 @@ public class Assets {
 
 			WebElement facility = d.findElement(By.xpath("//select[@id='utensil_kitchen_id']"));
 
-			if (facility.equals(d.switchTo().activeElement())) {
+			facility.isDisplayed();
 
-				facility.click();
+			facility.click();
 
-				Thread.sleep(200);
+			Thread.sleep(200);
 
-				facility.sendKeys("i");
+			facility.sendKeys("i");
 
-				Thread.sleep(200);
+			Thread.sleep(200);
 
-				facility.sendKeys(Keys.ENTER);
+			facility.sendKeys(Keys.ENTER);
 
-				logger.info("Verify that user can select the facility name");
+			facility.sendKeys(Keys.TAB);
 
-				facility.sendKeys(Keys.TAB);
+			Thread.sleep(200);
 
-				Thread.sleep(200);
-
-				facility.sendKeys(Keys.TAB);
-
-			}
+			facility.sendKeys(Keys.TAB);
+			 
+			logger.info("Verify that user can select the facility name");
+			
 
 		} catch (Exception e) {
 
@@ -224,18 +247,14 @@ public class Assets {
 
 			String depart = "Dispatched";
 
-			if (dept.getText().equals(depart)) {
+			dept.sendKeys(Keys.TAB);
 
-				logger.info("Verify that user can select the Department");
+			Thread.sleep(200);
 
-				dept.sendKeys(Keys.TAB);
-
-				Thread.sleep(200);
-
-				dept.sendKeys(Keys.TAB);
-
-			}
-
+			dept.sendKeys(Keys.TAB);
+		 
+			logger.info("Verify that user can select the Department");
+			
 		} catch (Exception e) {
 
 			logger.error("Verify that user can select the Department");
@@ -250,30 +269,28 @@ public class Assets {
 
 			WebElement depr = d.findElement(By.xpath("//select[@id='dep_cat']"));
 
-			if (depr.isDisplayed()) {
+			depr.isDisplayed();
 
-				depr.click();
+			depr.click();
 
-				Thread.sleep(200);
+			Thread.sleep(200);
 
-				depr.sendKeys("da");
+			depr.sendKeys("da");
 
-				Thread.sleep(200);
+			Thread.sleep(200);
 
-				depr.sendKeys(Keys.ENTER);
+			depr.sendKeys(Keys.ENTER);
 
-				Thread.sleep(200);
+			Thread.sleep(200);
+ 
+			depr.sendKeys(Keys.TAB);
 
-				logger.info("Verify that if the user can select the depriciation category");
+			Thread.sleep(200);
 
-				depr.sendKeys(Keys.TAB);
+			depr.sendKeys(Keys.TAB);
 
-				Thread.sleep(200);
-
-				depr.sendKeys(Keys.TAB);
-
-			}
-
+			logger.info("Verify that if the user can select the depriciation category");
+			
 		} catch (Exception e) {
 
 			logger.error("Verify that user can select the depriciation category");
@@ -296,7 +313,6 @@ public class Assets {
 
 				logger.info(
 						"Verify that if click depriciation category it should get depriceation percentage automatically");
-
 			}
 
 		}
@@ -338,21 +354,19 @@ public class Assets {
 
 			WebElement ven = d.findElement(By.xpath("//input[@id='utensil_vendor']"));
 
-			if (ven.isDisplayed()) {
+			ven.isDisplayed();
 
-				ven.click();
+			ven.click();
 
-				Thread.sleep(200);
+			Thread.sleep(200);
 
-				ven.sendKeys("QA");
+			ven.sendKeys("QA");
 
-				logger.info("Verify that user can select the depriciation category");
+			logger.info("Verify that user can select the depriciation category");
 
-				ven.sendKeys(Keys.TAB);
+			ven.sendKeys(Keys.TAB);
 
-				Thread.sleep(200);
-
-			}
+			Thread.sleep(200);
 
 		} catch (Exception e) {
 
@@ -366,7 +380,7 @@ public class Assets {
 
 			WebElement ven = d.findElement(By.xpath("//select[@id='utensil_utensilname_id']"));
 
-			if (ven.isDisplayed()) {
+			 ven.isDisplayed();
 
 				ven.click();
 
@@ -389,8 +403,6 @@ public class Assets {
 					logger.info("Verify that user can able to select the utensils name");
 
 				}
-
-			}
 
 		}
 
@@ -526,44 +538,12 @@ public class Assets {
 
 		try {
 
-			Thread.sleep(200);
-
-			WebElement sidebar = d.findElement(By.id("sidebarCollapse"));
-
-			sidebar.click();
-
-			logger.info("Verify  that if click master menu it getting to collapse");
-
-			WebElement facility = d.findElement(By.xpath("//span[contains(text(),'Facility Management')]"));
-
-			facility.click();
-
-			Thread.sleep(2000);
-
-			WebElement utensils = d.findElement(By.xpath("//a[contains(text(),'Assets')]"));
-
-			utensils.isDisplayed();
-
-			utensils.click();
-
-			Thread.sleep(2000);
-
 			String url = "http://192.168.1.230:4000/utensils";
-
-			if (d.getCurrentUrl().equals(url)) {
-
-				logger.info("Verify that if Utensils menu it should redirect to related  screen");
-
-			}
-
-		} catch (Exception e) {
-
-			logger.info("Verify that if Utensils menu it should redirect to related  screen");
-
-		}
-
-		try {
-
+			
+			d.get("http://192.168.1.230:4000/utensils");
+			
+			Thread.sleep(2000);
+			
 			WebElement srch = d.findElement(By.xpath("//input[@type='search']"));
 
 			srch.isDisplayed();
@@ -603,9 +583,7 @@ public class Assets {
 			add.isDisplayed();
 
 			add.click();
-
-			String url = "http://192.168.1.230:4000/utensils/new";
-
+ 
 			logger.info("If click add button is should redirect to add new screen");
 
 		} catch (Exception e) {
@@ -981,194 +959,186 @@ public class Assets {
 
 			WebElement status = d.findElement(By.xpath("//i[@title='Status']"));
 
-			if (status.isDisplayed()) {
+			status.isDisplayed();
 
-				status.click();
+			status.click();
 
-				logger.info("If click asset status  button it should redirect to related screen");
+			logger.info("If click asset status  button it should redirect to related screen");
 
-				Thread.sleep(200);
-
-			}
+			Thread.sleep(200);
 
 		} catch (Exception e) {
 
 			logger.error("If click asset status  button it should redirect to related screen");
 
 		}
-	 	 
-	 
-	 // Status Add
-	 
-	 try {
-		 
-	 Thread.sleep(200);
-	 
-	 WebElement add = d.findElement(By.xpath("//a[@class='btn']")); add.click();
-	 
-	 logger.
-	 info("Verify that if click add button it should redirect to related screen");
-	 
-	 Thread.sleep(200);
-	 
-	 WebElement date = d.findElement(By.xpath("//input[@id='status_date']"));
-	 date.click();
-	 
-	 Thread.sleep(200);
-	 
-	 date.sendKeys("22042019");
-	 
-	 Thread.sleep(200); date.sendKeys(Keys.TAB);
-	 
-	 
-	 } catch (Exception e) {
-	 
-	 logger.
-	 error("Verify that if click add button it should redirect to related screen"
-	 ); }
-	 
-	 
-	 // Utensil Name
-	 
-	 try {
-	 
-	 WebElement utname =
-	 d.findElement(By.xpath("//select[@id='status_Utensilname']"));
-	 utname.click();
-	 	 
-	 Thread.sleep(200);
-	 
-	 utname.sendKeys("21");
-	 
-	 utname.sendKeys(Keys.ENTER);
-	 
-	 Thread.sleep(200);
-	 
-	 utname.sendKeys(Keys.TAB);
-	 
-	 logger.info("Verify that user can select the utensils name");
-	 
-	 } catch (Exception e) {
-	 
-	 logger.error("Verify that user can select the utensils name"); }
-	 
-	 
-	 // Kitchen Name
-	 
-	 try {
-	 
-	 WebElement sfrom = d.findElement(By.xpath("//select[@id='status_From']"));
-	 
-	 sfrom.click();
-	 
-	 Thread.sleep(200);
-	 
-	 sfrom.sendKeys("I");
-	 
-	 sfrom.sendKeys(Keys.ENTER);
-	 
-	 Thread.sleep(200);
-	 
-	 sfrom.sendKeys(Keys.TAB);
-	 
-	 logger.info("Verify that user can select the Kitchen  name");
-	 
-	 
-	 } catch (Exception e) {
-	 
-	 logger.error("Verify that user can select the Kitchen  name");
-	 
-	 }
-	 
-	 
-	 // COUNT
-	 
-	 try {
-	 
-	 WebElement qty = d.findElement(By.xpath("//input[@id='qty']"));
-	 
-	 qty.click();
-	 
-	 Thread.sleep(200);
-	 
-	 qty.sendKeys("10");
-	 
-	 Thread.sleep(200);
-	 
-	 qty.sendKeys(Keys.TAB);
-	 
-	 logger.info("Verify that user can Enter the Count");
-	 
-	 } catch (Exception e) {
-	 
-	 logger.error("Verify that user can Enter the Count");
-	 
-	 }
-	 
-	 // STAUTS
-	 
-	 try {
-	 
-	 WebElement status = d.findElement(By.xpath("//select[@id='status_type']"));
-	 
-	 status.click();
-	 
-	 Thread.sleep(200);
-	 
-	 status.sendKeys("Ma");
-	 
-	 Thread.sleep(200);
-	 
-	 status.sendKeys(Keys.ENTER);
-	 
-	 Thread.sleep(200);
-	 
-	 status.sendKeys(Keys.TAB);
-	 
-	 logger.info("Verify that user can Enter the Count");
-	 
-	 } catch (Exception e) {
-	 
-	 logger.error("Verify that user can Enter the Count");
-	 
-	 }
-	 
-	 
-	 // SUBMIT
-	 
-	 try {
-	 
-	 WebElement submit = d.findElement(By.xpath("//input[@value='Save']"));
-	 
-	 if (submit.isDisplayed() && submit.isEnabled()) {
-	 
-	 Thread.sleep(200);
-	 
-	 submit.click();
-	 
-	 logger.info("Verify that user can Click the submit button");
-	 
-	 }
-	 
-	 } catch (Exception e) {
-	 
-	 logger.error("Verify that user can Click the submit button");
-	 
-	 }
-	 
-	 try {
-		
-	 WebElement mainte = d.findElement(By.xpath("//td[contains(text(),'Maintainence')]"));
-		 
-	 mainte.isDisplayed();
-		 
-	 logger.info("Verify that it successfully add the status");
-		 
-	} catch (Exception e) { 
-		
-	 logger.error("Verify that it successfully add the status");
-		 
-	}
+
+		// Status Add
+
+		try {
+
+			Thread.sleep(200);
+
+			WebElement add = d.findElement(By.xpath("//a[@class='btn']"));
+			add.click();
+
+			logger.info("Verify that if click add button it should redirect to related screen");
+
+			Thread.sleep(200);
+
+			WebElement date = d.findElement(By.xpath("//input[@id='status_date']"));
+			date.click();
+
+			Thread.sleep(200);
+
+			date.sendKeys("22042019");
+
+			Thread.sleep(200);
+			date.sendKeys(Keys.TAB);
+
+		} catch (Exception e) {
+
+			logger.error("Verify that if click add button it should redirect to related screen");
+
+		}
+	 
+		// Utensil Name
+
+		try {
+
+			WebElement utname = d.findElement(By.xpath("//select[@id='status_Utensilname']"));
+			utname.click();
+
+			Thread.sleep(200);
+
+			utname.sendKeys("21");
+
+			utname.sendKeys(Keys.ENTER);
+
+			Thread.sleep(200);
+
+			utname.sendKeys(Keys.TAB);
+
+			logger.info("Verify that user can select the utensils name");
+
+		} catch (Exception e) {
+
+			logger.error("Verify that user can select the utensils name");
+		}
+
+		// Kitchen Name
+
+		try {
+
+			WebElement sfrom = d.findElement(By.xpath("//select[@id='status_From']"));
+
+			sfrom.click();
+
+			Thread.sleep(200);
+
+			sfrom.sendKeys("I");
+
+			sfrom.sendKeys(Keys.ENTER);
+
+			Thread.sleep(200);
+
+			sfrom.sendKeys(Keys.TAB);
+
+			logger.info("Verify that user can select the Kitchen  name");
+
+		} catch (Exception e) {
+
+			logger.error("Verify that user can select the Kitchen  name");
+
+		}
+
+		// COUNT
+
+		try {
+
+			WebElement qty = d.findElement(By.xpath("//input[@id='qty']"));
+
+			qty.click();
+
+			Thread.sleep(200);
+
+			qty.sendKeys("10");
+
+			Thread.sleep(200);
+
+			qty.sendKeys(Keys.TAB);
+
+			logger.info("Verify that user can Enter the Count");
+
+		} catch (Exception e) {
+
+			logger.error("Verify that user can Enter the Count");
+
+		}
+
+		// STAUTS
+
+		try {
+
+			WebElement status = d.findElement(By.xpath("//select[@id='status_type']"));
+
+			status.click();
+
+			Thread.sleep(200);
+
+			status.sendKeys("Ma");
+
+			Thread.sleep(200);
+
+			status.sendKeys(Keys.ENTER);
+
+			Thread.sleep(200);
+
+			status.sendKeys(Keys.TAB);
+
+			logger.info("Verify that user can Enter the Count");
+
+		} catch (Exception e) {
+
+			logger.error("Verify that user can Enter the Count");
+
+		}
+
+		// SUBMIT
+
+		try {
+
+			WebElement submit = d.findElement(By.xpath("//input[@value='Save']"));
+
+			if (submit.isDisplayed() && submit.isEnabled()) {
+
+				Thread.sleep(200);
+
+				submit.click();
+
+				logger.info("Verify that user can Click the submit button");
+
+			}
+
+		} catch (Exception e) {
+
+			logger.error("Verify that user can Click the submit button");
+
+		}
+
+		try {
+
+			WebElement mainte = d.findElement(By.xpath("//td[contains(text(),'Maintainence')]"));
+
+			mainte.isDisplayed();
+
+			logger.info("Verify that it successfully add the status");
+
+		} catch (Exception e) {
+
+			logger.error("Verify that it successfully add the status");
+
+		}
 	 
 	 }
 		

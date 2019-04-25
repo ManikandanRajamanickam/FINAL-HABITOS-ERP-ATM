@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -28,7 +29,7 @@ import org.testng.annotations.AfterTest;
 
 public class Depriceation {
 
-	  WebDriver d;
+	WebDriver d;
 
 	static org.apache.log4j.Logger logger;
 
@@ -94,32 +95,33 @@ public class Depriceation {
 
 			sidebar.click();
 
-			logger.info("Verify  that if click master menu it getting to collapse");
-
 			WebElement masters = d.findElement(By.xpath("//span[contains(text(),'Masters')]"));
 
 			masters.click();
 
-			Thread.sleep(2000);
-
-			WebElement depart = d.findElement(By.xpath("//a[contains(text(),'Depreciation Category')]"));
-
-			//depart.isDisplayed();
-
-			depart.click();
+			logger.info("Verify  that if click master menu it getting to collapse");
 
 			Thread.sleep(2000);
-			
-			logger.info("if click depriceation category  menu it should redirect the related screen");
-
-			
-			d.get("http://192.168.1.230:4000/depriciation_categories");
 
 		}
 
 		catch (Exception e) {
 
-			logger.error("if click depriceation category  menu it should redirect the related screen");
+			logger.info("Verify  that if click master menu it getting to collapse");
+
+		}
+
+		d.get("http://192.168.1.230:4000/depriciation_categories");
+
+		String url = "http://192.168.1.230:4000/depriciation_categories";
+
+		if (d.getCurrentUrl().equals(url)) {
+
+			logger.info("If click depriceation category menu it should redirect to related screen");
+
+		} else {
+
+			logger.error("If click depriceation category menu it should redirect to related screen");
 
 		}
 
@@ -133,13 +135,25 @@ public class Depriceation {
 
 			WebElement add = d.findElement(By.xpath("//a[@class='btn']"));
 
+			add.isDisplayed();
+
 			add.click();
 
 			logger.info("If click add button it should redirect to add screen");
 
 			Thread.sleep(2000);
 
+		} catch (Exception e) {
+
+			logger.error("If click submit button it should redirect to index screen");
+
+		}
+
+		try {
+
 			WebElement depet = d.findElement(By.xpath("//input[@id='depriciation_category_name']"));
+
+			depet.isDisplayed();
 
 			depet.sendKeys("Damaging");
 
@@ -156,7 +170,7 @@ public class Depriceation {
 
 			WebElement submit = d.findElement(By.xpath("//input[@value='submit']"));
 
-			// submit.isDisplayed();
+			submit.isDisplayed();
 
 			Thread.sleep(100);
 
@@ -179,7 +193,7 @@ public class Depriceation {
 
 			WebElement srch = d.findElement(By.xpath("//input[@type='search']"));
 
-			//srch.isDisplayed();
+			// srch.isDisplayed();
 
 			srch.sendKeys("Damaging");
 
@@ -187,7 +201,7 @@ public class Depriceation {
 
 			WebElement filter = d.findElement(By.xpath("//td[@class='sorting_1']"));
 
-			//filter.isDisplayed();
+			filter.isDisplayed();
 
 			logger.info("Depriceation category  is successfully added");
 
@@ -201,7 +215,7 @@ public class Depriceation {
 
 	@BeforeTest
 	public void beforeTest() {
-		
+
 		try {
 
 			logger = logger.getLogger(" Habitos - Depreciation");
@@ -227,13 +241,14 @@ public class Depriceation {
 			logger.error("browser gets valid ip address");
 
 		}
-		
+
 	}
 
+	
 	@AfterTest
 	public void afterTest() {
-	
-	d.close();
+
+		d.close();
 	}
-     
+
 }

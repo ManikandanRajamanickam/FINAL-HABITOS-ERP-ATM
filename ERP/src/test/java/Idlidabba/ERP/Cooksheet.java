@@ -31,6 +31,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.Test; 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
@@ -165,23 +166,12 @@ public class Cooksheet {
 		try {
 			
 			d.manage().window().maximize();
-			
-			
+						
 			WebElement date = d.findElement(By.xpath("//input[@id='txtFrom']"));
 			
 			date.click();
 			
-			date.sendKeys(Keys.CONTROL, Keys.ARROW_UP);
-			
-			Thread.sleep(2000);
-			
-			
-			File screenshotFile = ((TakesScreenshot) d).getScreenshotAs(OutputType.FILE);
-
-			FileUtils.copyFile(screenshotFile, new File("C:\\Screenshots\\mc.jpg"));
-			
-
-			logger.info("Verify that if the date is presented in date field");
+			logger.info("Verify that if the date is presented in cook sheet");
 
 			WebElement client = d.findElement(By.xpath("//th[@class='tenant_cooksheet']"));
 

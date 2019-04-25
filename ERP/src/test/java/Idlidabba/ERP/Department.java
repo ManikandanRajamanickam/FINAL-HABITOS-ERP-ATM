@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -94,32 +95,40 @@ public class Department {
 
 			sidebar.click();
 
-			logger.info("Verify  that if click master menu it getting to collapse");
-
 			WebElement masters = d.findElement(By.xpath("//span[contains(text(),'Masters')]"));
 
 			masters.click();
 
-			Thread.sleep(2000);
-
-			WebElement depart = d.findElement(By.xpath("//a[contains(text(),'Department')]"));
-
-			depart.click();
-
-			Thread.sleep(2000);
+			logger.info("Verify  that if click master menu it getting to collapse");
 
 			d.get("http://192.168.1.230:4000/departments");
-			 
+		
+			
 		}
 
 		catch (Exception e) {
 
+			logger.error("Verify  that if click master menu it getting to collapse");
+
+		}	
+
+		
+		String url = "http://192.168.1.230:4000/departments";
+		
+		if (d.getCurrentUrl().equals(url)) {
+						
+			Thread.sleep(2000);
+			
+			logger.info("if click department menu it should redirect the related screen");
+			
+		} else {
+
 			logger.error("if click department menu it should redirect the related screen");
-
+						
 		}
-
+				 
 	}
-
+				
 	@Test(priority = 3)
 
 	public void add_department() {
@@ -133,7 +142,16 @@ public class Department {
 			add.click();
 
 			logger.info("If click add button it should redirect to add screen");
+			
+		} catch (Exception e) {
 
+			logger.error("If click add button it should redirect to add screen");
+
+		}
+
+		
+		try {
+			
 			Thread.sleep(2000);
 
 			WebElement depet = d.findElement(By.xpath("//input[@id='department_name']"));
