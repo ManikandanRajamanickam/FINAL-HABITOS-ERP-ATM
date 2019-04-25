@@ -33,6 +33,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -160,8 +161,7 @@ public class Utensils {
 
 		}
 		
-		
-		
+		 
 
 		// Add utensils
 
@@ -180,11 +180,10 @@ public class Utensils {
 			logger.info("Verify that if the add button is present in utensil index page");
 
 		}
+				
+		d.get("http://192.168.1.230:4000/utensilnames/new");
 		
-		
-		String url = "http://192.168.1.230:4000/utensilnames/new";
-		
-		if (d.getCurrentUrl().equals(url)) {
+		/*if (d.getCurrentUrl().equals(url)) {
 			
 			logger.info("If click add new button it should redirect to add new screen");
 			
@@ -192,7 +191,7 @@ public class Utensils {
 
 			logger.error("If click add new button it should redirect to add new screen");
 		}
-		
+*/		
 
 		
 		// Enter the new name
