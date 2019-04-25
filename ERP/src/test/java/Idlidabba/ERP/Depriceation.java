@@ -19,6 +19,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -157,9 +158,11 @@ public class Depriceation {
 
 		try {
 
+			Thread.sleep(200);
+			
 			WebElement depet = d.findElement(By.xpath("//input[@id='depriciation_category_name']"));
 
-			depet.isDisplayed();
+			// depet.isDisplayed();
 
 			depet.sendKeys("Damaging");
 
