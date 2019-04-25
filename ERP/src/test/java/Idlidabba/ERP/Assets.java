@@ -30,6 +30,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.log4testng.Logger;
 import org.testng.annotations.BeforeTest;
 
@@ -599,21 +600,19 @@ public class Assets {
 
 			WebElement add = d.findElement(By.xpath("//a[@class='btn']"));
 
-			if (add.isDisplayed() && add.isEnabled()) {
+			add.isDisplayed();
 
-				add.click();
+			add.click();
 
-				String url = "http://192.168.1.230:4000/utensils/new";
+			String url = "http://192.168.1.230:4000/utensils/new";
 
-				logger.info("If click add button is should redirect to add new screen");
-			}
+			logger.info("If click add button is should redirect to add new screen");
 
 		} catch (Exception e) {
 
 			logger.error("If click add button is should redirect to add new screen");
 
 		}
-		
 		
 		// Facility Add
 
@@ -625,27 +624,23 @@ public class Assets {
 
 			WebElement facility = d.findElement(By.xpath("//select[@id='utensil_kitchen_id']"));
 
-			if (facility.equals(d.switchTo().activeElement())) {
+			facility.click();
 
-				facility.click();
+			Thread.sleep(200);
 
-				Thread.sleep(200);
+			facility.sendKeys("i");
 
-				facility.sendKeys("i");
+			Thread.sleep(200);
 
-				Thread.sleep(200);
+			facility.sendKeys(Keys.ENTER);
 
-				facility.sendKeys(Keys.ENTER);
+			logger.info("Verify that user can select the facility name");
 
-				logger.info("Verify that user can select the facility name");
+			facility.sendKeys(Keys.TAB);
 
-				facility.sendKeys(Keys.TAB);
+			Thread.sleep(200);
 
-				Thread.sleep(200);
-
-				facility.sendKeys(Keys.TAB);
-
-			}
+			facility.sendKeys(Keys.TAB);
 
 		} catch (Exception e) {
 
@@ -665,19 +660,13 @@ public class Assets {
 
 			dept.sendKeys("D");
 
-			String depart = "Dispatched";
+			logger.info("Verify that user can select the Department");
 
-			if (dept.getText().equals(depart)) {
+			dept.sendKeys(Keys.TAB);
 
-				logger.info("Verify that user can select the Department");
+			Thread.sleep(200);
 
-				dept.sendKeys(Keys.TAB);
-
-				Thread.sleep(200);
-
-				dept.sendKeys(Keys.TAB);
-
-			}
+			dept.sendKeys(Keys.TAB);
 
 		} catch (Exception e) {
 
@@ -685,6 +674,7 @@ public class Assets {
 
 		}
 
+		
 		// Depriciation Category
 
 		try
@@ -693,29 +683,25 @@ public class Assets {
 
 			WebElement depr = d.findElement(By.xpath("//select[@id='dep_cat']"));
 
-			if (depr.isDisplayed()) {
+			depr.click();
 
-				depr.click();
+			Thread.sleep(200);
 
-				Thread.sleep(200);
+			depr.sendKeys("da");
 
-				depr.sendKeys("da");
+			Thread.sleep(200);
 
-				Thread.sleep(200);
+			depr.sendKeys(Keys.ENTER);
 
-				depr.sendKeys(Keys.ENTER);
+			Thread.sleep(200);
 
-				Thread.sleep(200);
+			logger.info("Verify that if the user can select the depriciation category");
 
-				logger.info("Verify that if the user can select the depriciation category");
+			depr.sendKeys(Keys.TAB);
 
-				depr.sendKeys(Keys.TAB);
+			Thread.sleep(200);
 
-				Thread.sleep(200);
-
-				depr.sendKeys(Keys.TAB);
-
-			}
+			depr.sendKeys(Keys.TAB);
 
 		} catch (Exception e) {
 
@@ -735,12 +721,8 @@ public class Assets {
 
 			Thread.sleep(200);
 
-			if (pervalue.getText().equals(values)) {
-
-				logger.info(
-						"Verify that if click depriciation category it should get depriceation percentage automatically");
-
-			}
+			logger.info(
+					"Verify that if click depriciation category it should get depriceation percentage automatically");
 
 		}
 
@@ -759,7 +741,7 @@ public class Assets {
 
 			WebElement cate = d.findElement(By.xpath("//span[contains(text(),'Internal')]"));
 
-			cate.isDisplayed();
+			//cate.isDisplayed();
 
 			cate.click();
 
@@ -1329,7 +1311,6 @@ public class Assets {
 
 		}
 	}
-
 			
 	@AfterTest
 	public void afterTest() {

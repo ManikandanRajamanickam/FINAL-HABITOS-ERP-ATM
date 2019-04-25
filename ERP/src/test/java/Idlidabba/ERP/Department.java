@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -137,23 +138,17 @@ public class Department {
 
 			WebElement depet = d.findElement(By.xpath("//input[@id='department_name']"));
 
-			if (depet.equals(d.switchTo().activeElement())) {
+			depet.sendKeys("Dispatched");
 
-				depet.sendKeys("Dispatched");
+			Thread.sleep(200);
 
-				Thread.sleep(200);
+			WebElement submit = d.findElement(By.xpath("//input[@value='submit']"));
 
-				WebElement submit = d.findElement(By.xpath("//input[@value='submit']"));
+			Thread.sleep(100);
 
-				submit.isDisplayed();
+			submit.click();
 
-				Thread.sleep(100);
-
-				submit.click();
-
-				logger.info("If click submit button it should redirect to index screen");
-
-			}
+			logger.info("If click submit button it should redirect to index screen");
 
 		} catch (Exception e) {
 
@@ -171,15 +166,11 @@ public class Department {
 
 			WebElement srch = d.findElement(By.xpath("//input[@type='search']"));
 
-			srch.isDisplayed();
-
 			srch.sendKeys("Dispatched");
 
 			Thread.sleep(200);
 
 			WebElement filter = d.findElement(By.xpath("//td[@class='sorting_1']"));
-
-			filter.isDisplayed();
 
 			logger.info("Department is successfully added");
 

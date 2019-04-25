@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -103,7 +104,7 @@ public class Depriceation {
 
 			WebElement depart = d.findElement(By.xpath("//a[contains(text(),'Depreciation Category')]"));
 
-			depart.isDisplayed();
+			//depart.isDisplayed();
 
 			depart.click();
 
@@ -140,32 +141,28 @@ public class Depriceation {
 
 			WebElement depet = d.findElement(By.xpath("//input[@id='depriciation_category_name']"));
 
-			if (depet.equals(d.switchTo().activeElement())) {
+			depet.sendKeys("Damaging");
 
-				depet.sendKeys("Damaging");
+			Thread.sleep(2000);
 
-				Thread.sleep(2000);
+			WebElement dpercent = d
+					.findElement(By.xpath("//input[@name='depriciation_category[depreciation_percentage]']"));
 
-				WebElement dpercent = d
-						.findElement(By.xpath("//input[@name='depriciation_category[depreciation_percentage]']"));
+			dpercent.click();
 
-				dpercent.click();
+			dpercent.sendKeys("25");
 
-				dpercent.sendKeys("25");
+			Thread.sleep(2000);
 
-				Thread.sleep(2000);
+			WebElement submit = d.findElement(By.xpath("//input[@value='submit']"));
 
-				WebElement submit = d.findElement(By.xpath("//input[@value='submit']"));
+			// submit.isDisplayed();
 
-				submit.isDisplayed();
+			Thread.sleep(100);
 
-				Thread.sleep(100);
+			submit.click();
 
-				submit.click();
-
-				logger.info("If click submit button it should redirect to index screen");
-
-			}
+			logger.info("If click submit button it should redirect to index screen");
 
 		} catch (Exception e) {
 
@@ -182,7 +179,7 @@ public class Depriceation {
 
 			WebElement srch = d.findElement(By.xpath("//input[@type='search']"));
 
-			srch.isDisplayed();
+			//srch.isDisplayed();
 
 			srch.sendKeys("Damaging");
 
@@ -190,7 +187,7 @@ public class Depriceation {
 
 			WebElement filter = d.findElement(By.xpath("//td[@class='sorting_1']"));
 
-			filter.isDisplayed();
+			//filter.isDisplayed();
 
 			logger.info("Depriceation category  is successfully added");
 

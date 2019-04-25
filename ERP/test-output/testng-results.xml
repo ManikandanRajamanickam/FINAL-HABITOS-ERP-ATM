@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28325" started-at="2019-04-24T13:45:47Z" finished-at="2019-04-24T13:46:16Z">
+  <suite name="Default suite" duration-ms="32153" started-at="2019-04-25T05:51:23Z" finished-at="2019-04-25T05:51:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28325" started-at="2019-04-24T13:45:47Z" finished-at="2019-04-24T13:46:16Z">
+    <test name="Default test" duration-ms="32153" started-at="2019-04-25T05:51:23Z" finished-at="2019-04-25T05:51:55Z">
       <class name="Idlidabba.ERP.Cooksheet">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Idlidabba.ERP.Cooksheet@c038203]" name="beforeTest" is-config="true" duration-ms="9223" started-at="2019-04-24T19:15:47Z" finished-at="2019-04-24T19:15:57Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Idlidabba.ERP.Cooksheet@c038203]" name="beforeTest" is-config="true" duration-ms="11072" started-at="2019-04-25T11:21:23Z" finished-at="2019-04-25T11:21:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="Valid_Login()[pri:1, instance:Idlidabba.ERP.Cooksheet@c038203]" name="Valid_Login" duration-ms="6302" started-at="2019-04-24T19:15:57Z" finished-at="2019-04-24T19:16:03Z">
+        <test-method status="PASS" signature="Valid_Login()[pri:1, instance:Idlidabba.ERP.Cooksheet@c038203]" name="Valid_Login" duration-ms="9702" started-at="2019-04-25T11:21:34Z" finished-at="2019-04-25T11:21:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Valid_Login -->
-        <test-method status="PASS" signature="Cook_Sheet()[pri:2, instance:Idlidabba.ERP.Cooksheet@c038203]" name="Cook_Sheet" duration-ms="8659" started-at="2019-04-24T19:16:03Z" finished-at="2019-04-24T19:16:12Z">
+        <test-method status="PASS" signature="Cook_Sheet()[pri:2, instance:Idlidabba.ERP.Cooksheet@c038203]" name="Cook_Sheet" duration-ms="8901" started-at="2019-04-25T11:21:43Z" finished-at="2019-04-25T11:21:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Cook_Sheet -->
-        <test-method status="PASS" signature="clientcooksheet()[pri:3, instance:Idlidabba.ERP.Cooksheet@c038203]" name="clientcooksheet" duration-ms="1693" started-at="2019-04-24T19:16:12Z" finished-at="2019-04-24T19:16:13Z">
+        <test-method status="PASS" signature="clientcooksheet()[pri:3, instance:Idlidabba.ERP.Cooksheet@c038203]" name="clientcooksheet" duration-ms="2011" started-at="2019-04-25T11:21:52Z" finished-at="2019-04-25T11:21:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clientcooksheet -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:Idlidabba.ERP.Cooksheet@c038203]" name="afterTest" is-config="true" duration-ms="2382" started-at="2019-04-24T19:16:13Z" finished-at="2019-04-24T19:16:16Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Idlidabba.ERP.Cooksheet@c038203]" name="afterTest" is-config="true" duration-ms="373" started-at="2019-04-25T11:21:54Z" finished-at="2019-04-25T11:21:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
