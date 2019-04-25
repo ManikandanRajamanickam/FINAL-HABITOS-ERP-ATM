@@ -18,6 +18,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -165,7 +166,7 @@ public class Depriceation {
 			Thread.sleep(2000);
 
 			WebElement dpercent = d
-					.findElement(By.xpath("//input[@name='depriciation_category[depreciation_percentage]']"));
+					.findElement(By.xpath("//input[@id='depriciation_category_depreciation_percentage']"));
 
 			dpercent.click();
 
