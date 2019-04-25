@@ -21,13 +21,20 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -135,7 +142,7 @@ public class Depriceation {
 	
 	@Test(priority = 3)
 
-	public void add_depriceation() {
+	public void add_depriceation() throws IOException {
 
 		try {
 
@@ -180,19 +187,26 @@ public class Depriceation {
 		
 		try {
 			
-			WebElement dpercent = d
-					.findElement(By.xpath("//input[@id='depriciation_category_depreciation_percentage']"));
+			Thread.sleep(200);
+			
+			WebElement dpercent = d.findElement(By.xpath("//input[@id='depriciation_category_depreciation_percentage']"));
 
 			dpercent.click();
 
 			dpercent.sendKeys("25");
 
-			Thread.sleep(2000);
+			Thread.sleep(200);
 
 			logger.info("Verify that user can enter the depriciation percentage  in input field");
 
 		} catch (Exception e) {
+			
+			File screenshotFile = ((TakesScreenshot) d).getScreenshotAs(OutputType.FILE);
 
+			FileUtils.copyFile(screenshotFile, new File("C:\\Screenshots\\depri.jpg"));
+
+			
+			
 			logger.error("Verify that user can enter the depriciation percentage in input field");
 		}
 			
