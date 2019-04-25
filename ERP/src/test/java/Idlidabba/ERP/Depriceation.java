@@ -20,6 +20,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -166,8 +167,19 @@ public class Depriceation {
 
 			depet.sendKeys("Damaging");
 
-			Thread.sleep(2000);
+			Thread.sleep(200);
 
+		logger.info("Verify that user can enter the depriciation category in input field");
+		}
+		
+		catch (Exception e) {
+
+			logger.error("Verify that user can enter the depriciation category in input field");
+		}
+				
+		
+		try {
+			
 			WebElement dpercent = d
 					.findElement(By.xpath("//input[@id='depriciation_category_depreciation_percentage']"));
 
@@ -177,11 +189,11 @@ public class Depriceation {
 
 			Thread.sleep(2000);
 
-			logger.info("Verify that user can enter the depriciation category in input field");
+			logger.info("Verify that user can enter the depriciation percentage  in input field");
 
 		} catch (Exception e) {
 
-			logger.error("Verify that user can enter the depriciation category in input field");
+			logger.error("Verify that user can enter the depriciation percentage in input field");
 		}
 			
 				
