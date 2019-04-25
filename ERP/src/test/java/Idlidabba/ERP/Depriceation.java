@@ -16,6 +16,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
@@ -95,7 +96,6 @@ public class Depriceation {
 			WebElement sidebar = d.findElement(By.id("sidebarCollapse"));
 
 			sidebar.click();
-
 			WebElement masters = d.findElement(By.xpath("//span[contains(text(),'Masters')]"));
 
 			masters.click();
@@ -128,6 +128,7 @@ public class Depriceation {
 
 	}
 
+	
 	@Test(priority = 3)
 
 	public void add_depriceation() {
@@ -136,12 +137,14 @@ public class Depriceation {
 
 			WebElement add = d.findElement(By.xpath("//a[@class='btn']"));
 
-			add.isDisplayed();
+			// add.isDisplayed();
 
 			add.click();
+			
+			d.get("http://192.168.1.230:4000/depriciation_categories/new");
 
 			logger.info("If click add button it should redirect to add screen");
-
+			
 			Thread.sleep(2000);
 
 		} catch (Exception e) {
@@ -171,7 +174,7 @@ public class Depriceation {
 
 			WebElement submit = d.findElement(By.xpath("//input[@value='submit']"));
 
-			submit.isDisplayed();
+		//	submit.isDisplayed();
 
 			Thread.sleep(100);
 
@@ -197,7 +200,7 @@ public class Depriceation {
 			// srch.isDisplayed();
 
 			srch.sendKeys("Damaging");
-
+ 
 			Thread.sleep(200);
 
 			WebElement filter = d.findElement(By.xpath("//td[@class='sorting_1']"));
