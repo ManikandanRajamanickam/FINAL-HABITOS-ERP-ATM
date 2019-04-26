@@ -449,3 +449,12 @@ Session ID: d0d3491abb8e5d6ef9028eeef2b82639
 2019-04-25 19:17:00,827 [main] INFO  Habitos - DEPRICEATION - ADD - If click add button it should redirect to add screen
 2019-04-25 19:17:03,570 [main] INFO  Habitos - DEPRICEATION - ADD - Verify that user can enter the depriciation category in input field
 2019-04-25 19:17:05,969 [main] INFO  Habitos - DEPRICEATION - ADD - Verify that user can enter the depriciation percentage  in input field
+2019-04-26 10:25:46,253 [main] INFO  Habitos - Depreciation - browser gets open
+2019-04-26 10:25:58,016 [main] INFO  Habitos - DEPRICEATION - ADD - Verify  that if click master menu it getting to collapse
+2019-04-26 10:26:01,937 [main] INFO  Habitos - DEPRICEATION - ADD - If click depriceation category menu it should redirect to related screen
+2019-04-26 10:26:05,921 [main] INFO  Habitos - DEPRICEATION - ADD - If click add button it should redirect to add screen
+2019-04-26 10:26:09,250 [main] INFO  Habitos - DEPRICEATION - ADD - Verify that user can enter the depriciation category in input field
+2019-04-26 10:26:19,565 [main] ERROR  Habitos - DEPRICEATION - ADD - Verify that if the user can enter the depriceation category in input field
+2019-04-26 10:26:20,667 [main] INFO  Habitos - DEPRICEATION - ADD - Verify that user can enter the depriciation percentage  in input field
+2019-04-26 10:26:21,573 [main] INFO  Habitos - DEPRICEATION - ADD - If click submit button it should redirect to index screen
+2019-04-26 10:26:21,683 [main] ERROR  Habitos - DEPRICEATION - ADD - Depriceation category  is successfully added

@@ -26,6 +26,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.io.File;
@@ -172,7 +173,7 @@ public class Depriceation {
 		try {
 
 			Thread.sleep(200);
-			
+
 			WebElement depet = d.findElement(By.xpath("//input[@id='depriciation_category_name']"));
 
 			// depet.isDisplayed();
@@ -180,27 +181,27 @@ public class Depriceation {
 			depet.sendKeys("Damaging");
 
 			Thread.sleep(200);
-			
+
 			depet.sendKeys(Keys.TAB);
-			
+
 			Thread.sleep(200);
 
-		logger.info("Verify that user can enter the depriciation category in input field");
+			logger.info("Verify that user can enter the depriciation category in input field");
 		}
-		
+
 		catch (Exception e) {
 
 			logger.error("Verify that user can enter the depriciation category in input field");
 		}
 		
 		
-		// Dep Category
+	// Dep Category
 		
 		try {
 			
 			Thread.sleep(200);
 			
-			WebElement  desc = d.findElement(By.xpath("depriciation_category_description"));
+			WebElement  desc = d.findElement(By.xpath("//textarea[@id='depriciation_category_description']"));
 			
 			desc.sendKeys("depriceation");
 			
@@ -208,15 +209,15 @@ public class Depriceation {
 			
 			desc.sendKeys(Keys.TAB);
 			
-			logger.info("Verify that if the user can enter the depriceation category in input field");
+			logger.info("Verify that if the user can enter the description in input field");
 						
 		} catch (Exception e) {
 			
-			logger.error("Verify that if the user can enter the depriceation category in input field");
+			logger.error("Verify that if the user can enter the description in input field");
 		}
 				
-		
-		// Dep Percentage
+						
+	// Dep Percentage
 		
 		try {
 			
@@ -224,7 +225,7 @@ public class Depriceation {
 			
 			WebElement dpercent = d.findElement(By.xpath("//input[@id='depriciation_category_depreciation_percentage']"));
 
-			dpercent.click();
+			// dpercent.click();
 
 			dpercent.sendKeys("25");
 
@@ -232,7 +233,7 @@ public class Depriceation {
 
 			logger.info("Verify that user can enter the depriciation percentage  in input field");
 
-		} catch (Exception e) {
+		} catch (Exception e) { 
 			
 			File screenshotFile = ((TakesScreenshot) d).getScreenshotAs(OutputType.FILE);
 
