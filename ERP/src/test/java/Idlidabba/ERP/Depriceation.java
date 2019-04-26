@@ -25,6 +25,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.io.File;
@@ -165,6 +166,8 @@ public class Depriceation {
 			logger.error("If click submit button it should redirect to index screen");
 
 		}
+		
+		// Add depriceation
 
 		try {
 
@@ -181,12 +184,6 @@ public class Depriceation {
 			depet.sendKeys(Keys.TAB);
 			
 			Thread.sleep(200);
-			
-			depet.sendKeys(Keys.TAB);
-			
-			Thread.sleep(200);
-			
-			depet.sendKeys(Keys.TAB);
 
 		logger.info("Verify that user can enter the depriciation category in input field");
 		}
@@ -195,13 +192,37 @@ public class Depriceation {
 
 			logger.error("Verify that user can enter the depriciation category in input field");
 		}
-				
+		
+		
+		// Dep Category
 		
 		try {
 			
 			Thread.sleep(200);
 			
-			WebElement dpercent = d.findElement(By.id("depriciation_category_depreciation_percentage"));
+			WebElement  desc = d.findElement(By.xpath("depriciation_category_description"));
+			
+			desc.sendKeys("depriceation");
+			
+			Thread.sleep(200);
+			
+			desc.sendKeys(Keys.TAB);
+			
+			logger.info("Verify that if the user can enter the depriceation category in input field");
+						
+		} catch (Exception e) {
+			
+			logger.error("Verify that if the user can enter the depriceation category in input field");
+		}
+				
+		
+		// Dep Percentage
+		
+		try {
+			
+			Thread.sleep(200);
+			
+			WebElement dpercent = d.findElement(By.xpath("//input[@id='depriciation_category_depreciation_percentage']"));
 
 			dpercent.click();
 
@@ -219,8 +240,8 @@ public class Depriceation {
 			
 			logger.error("Verify that user can enter the depriciation percentage in input field");
 		}
-			
-				
+			 
+		
 		try {
 			
 			Thread.sleep(200);
