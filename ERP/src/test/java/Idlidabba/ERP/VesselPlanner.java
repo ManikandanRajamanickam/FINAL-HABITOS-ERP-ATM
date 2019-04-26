@@ -28,6 +28,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.util.Date;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
@@ -620,7 +621,6 @@ import org.testng.annotations.AfterTest;
   public void beforeTest() { 
 
 		try {
-
 		 
 			logger = logger.getLogger(" Habitos - Vessel Planner");
 
@@ -628,7 +628,7 @@ import org.testng.annotations.AfterTest;
 
 			Thread.sleep(100);
 
-			System.setProperty("webdriver.chrome.driver", "../ERP/resources/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "..//ERP//resources//Latest_driver//chromedriver.exe");
 
 			d = new ChromeDriver();
 

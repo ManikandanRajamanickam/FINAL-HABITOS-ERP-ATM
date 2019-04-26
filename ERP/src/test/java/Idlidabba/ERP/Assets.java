@@ -39,6 +39,8 @@ import org.testng.annotations.Test;
 import org.testng.log4testng.Logger;
 import org.testng.annotations.BeforeTest;
 
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.PropertyConfigurator;
@@ -184,7 +186,7 @@ public class Assets {
 			
 		d.get("http://192.168.1.230:4000/utensils/new");
 		
-		String url = "http://192.168.1.230:4000/utensils/new";
+		 String url = "http://192.168.1.230:4000/utensils/new";
 		
 		if ( d.getCurrentUrl().equals(url)) {
   
@@ -280,18 +282,16 @@ public class Assets {
 			depr.sendKeys(Keys.ENTER);
 
 			Thread.sleep(200);
- 
-			depr.sendKeys(Keys.TAB);
-
-			Thread.sleep(200);
 
 			depr.sendKeys(Keys.TAB);
+
+			Thread.sleep(200); 
 
 			logger.info("Verify that if the user can select the depriciation category");
-			
+
 		} catch (Exception e) {
 
-			logger.error("Verify that user can select the depriciation category");
+			logger.error("Verify that if the user can select the depriciation category");
 
 		}
 
@@ -305,13 +305,11 @@ public class Assets {
 
 			Thread.sleep(200);
 
-			logger.info(
-					"Verify that if select depriciation category it should get depriceation percentage automatically");
+			logger.info("Verify that if select depriciation category it should get depriceation percentage automatically");
 
 		} else {
 
-			logger.info(
-					"Verify that if select depriciation category it should get depriceation percentage automatically");
+			logger.info("Verify that if select depriciation category it should get depriceation percentage automatically");
 
 		}
 		
@@ -326,11 +324,11 @@ public class Assets {
 
 			 cate.isDisplayed();
 
-			cate.click();
+			cate.click(); 
 
 			Thread.sleep(200);
 			
-		//	cate.sendKeys(Keys.TAB);
+			// cate.sendKeys(Keys.TAB);
 
 			logger.info("if click transit it should select the ratio button");
 			
@@ -348,7 +346,7 @@ public class Assets {
 			WebElement ven = d.findElement(By.xpath("//input[@id='utensil_vendor']"));
 
 			ven.isDisplayed();
-
+ 
 			ven.click();
 
 			Thread.sleep(200);
@@ -357,7 +355,7 @@ public class Assets {
 
 			logger.info("Verify that user can select the depriciation category");
 
-			//ven.sendKeys(Keys.TAB);
+			// ven.sendKeys(Keys.TAB);
 
 			Thread.sleep(200);
 
@@ -366,14 +364,14 @@ public class Assets {
 			logger.error("Verify that user can select the depriciation category");
 
 		}
-
+ 
 		// Utensils Names
 
 		try {
 
 			WebElement ven = d.findElement(By.xpath("//select[@id='utensil_utensilname_id']"));
 
-			ven.isDisplayed();
+			//ven.isDisplayed();
 
 			ven.click();
 
@@ -401,6 +399,28 @@ public class Assets {
 			logger.error("Verify that user can able to select the utensils name");
 
 		}
+		
+		
+		try {
+			
+			Thread.sleep(200);			
+			Robot robot = new Robot();
+			
+			robot.keyPress(KeyEvent.VK_PAGE_DOWN);
+			robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
+			
+			Thread.sleep(200);
+			
+			robot.keyPress(KeyEvent.VK_PAGE_DOWN);
+			robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
+			
+			logger.info("Verify that if the page scroll is working");
+			
+		} catch (Exception e) {
+			
+			logger.info("Verify that if the page scroll is working");
+		}
+		
 		
 		// BODY WEIGHT
 
@@ -509,7 +529,7 @@ public class Assets {
 
 			Thread.sleep(200);
 
-			submit.isDisplayed();
+			// submit.isDisplayed();
 
 			submit.click();
 
@@ -1255,6 +1275,7 @@ public class Assets {
 	 }
 	 	 
 	@BeforeTest
+
 	public void beforeTest() {
 
 		try {
@@ -1265,7 +1286,7 @@ public class Assets {
 
 			Thread.sleep(100);
 
-			System.setProperty("webdriver.chrome.driver", "../ERP/resources/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "..//ERP/resources//Latest_driver//chromedriver.exe");
 
 			d = new ChromeDriver();
 

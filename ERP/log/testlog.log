@@ -498,3 +498,200 @@ Session ID: d0d3491abb8e5d6ef9028eeef2b82639
 2019-04-26 12:22:16,197 -  Habitos - Asset -  update -ERROR - If click edit button it should redirect to related screen
 2019-04-26 12:22:18,225 -  Habitos - Asset -  update -ERROR - Verify that user can change status maintenace into  Inhouse
 2019-04-26 12:22:18,240 -  Habitos - Asset -  update -ERROR - Verify that if change the status it should affect the assets staus and count
+2019-04-26 17:44:00,720 -  Habitos - Assets -ERROR - browser gets valid ip address
+2019-04-26 17:44:01,017 -  Habitos - Assets -ERROR - Verify that if click facility menu it should opent the menu
+2019-04-26 17:44:03,021 -  Habitos - Assets -ERROR - Verify that if click asset menu it should redirect to related  screen
+2019-04-26 17:44:03,021 -  Habitos - Assets -ERROR - Verify that if the add button is present 
+2019-04-26 17:44:03,036 -  Habitos - Assets -ERROR - Asset is not successfully added
+2019-04-26 17:44:03,036 -  Habitos - Assets -ERROR - If click add button is should redirect to add new screen
+2019-04-26 17:44:03,240 -  Habitos - Assets - Add -ERROR - Verify that user can select the facility name
+2019-04-26 17:44:03,240 -  Habitos - Assets - Add -ERROR - Verify that user can select the Department
+2019-04-26 17:44:03,240 -  Habitos - Assets - Add -ERROR - Verify that user can select the depriciation category
+2019-04-26 17:44:05,253 -  Habitos - Assets - Add -ERROR - Verify that if click depriciation category it should get depriceation percentage automatically
+2019-04-26 17:44:07,280 -  Habitos - Assets - Add -INFO - if click transit it should select the ratio button
+2019-04-26 17:44:07,280 -  Habitos - Assets - Add -ERROR - Verify that user can select the depriciation category
+2019-04-26 17:44:07,280 -  Habitos - Assets - Add -ERROR - Verify that user can able to select the utensils name
+2019-04-26 17:44:07,280 -  Habitos - Assets - Add -ERROR - Verify that user enter the utensils body weights
+2019-04-26 17:44:07,280 -  Habitos - Assets - Add -ERROR - Verify that user can enter the  utensils Lid Weight
+2019-04-26 17:44:07,280 -  Habitos - Assets - Add -ERROR - Verify that user can enter the utensils price amount
+2019-04-26 17:44:07,295 -  Habitos - Assets - Add -ERROR - Verify that user can enter the utensils count
+2019-04-26 17:44:07,295 -  Habitos - Assets - Add -ERROR - User can able click the submit button
+2019-04-26 17:44:07,295 -  Habitos - Asset -  update -ERROR - Verify that can search the asset name using searching box
+2019-04-26 17:44:07,295 -  Habitos - Asset -  update -ERROR - If click asset status  button it should redirect to related screen
+2019-04-26 17:44:07,499 -  Habitos - Asset -  update -ERROR - Verify that if click add button it should redirect to related screen
+2019-04-26 17:44:07,499 -  Habitos - Asset -  update -ERROR - Verify that user can select the utensils name
+2019-04-26 17:44:07,499 -  Habitos - Asset -  update -ERROR - Verify that user can select the Kitchen  name
+2019-04-26 17:44:07,499 -  Habitos - Asset -  update -ERROR - Verify that user can Enter the Count
+2019-04-26 17:44:07,499 -  Habitos - Asset -  update -ERROR - Verify that user can Enter the Count
+2019-04-26 17:44:07,499 -  Habitos - Asset -  update -ERROR - Verify that user can Click the submit button
+2019-04-26 17:44:07,499 -  Habitos - Asset -  update -ERROR - Verify that it successfully add the status
+2019-04-26 17:44:07,717 -  Habitos - Asset -  update -ERROR - If click edit button it should redirect to related screen
+2019-04-26 17:45:06,354 -  Habitos - Assets -ERROR - browser gets valid ip address
+2019-04-26 17:45:06,651 -  Habitos - Assets -ERROR - Verify that if click facility menu it should opent the menu
+2019-04-26 17:45:08,665 -  Habitos - Assets -ERROR - Verify that if click asset menu it should redirect to related  screen
+2019-04-26 17:45:08,665 -  Habitos - Assets -ERROR - Verify that if the add button is present 
+2019-04-26 17:45:08,680 -  Habitos - Assets -ERROR - Asset is not successfully added
+2019-04-26 17:45:08,680 -  Habitos - Assets -ERROR - If click add button is should redirect to add new screen
+2019-04-26 17:45:08,900 -  Habitos - Assets - Add -ERROR - Verify that user can select the facility name
+2019-04-26 17:45:08,900 -  Habitos - Assets - Add -ERROR - Verify that user can select the Department
+2019-04-26 17:45:08,900 -  Habitos - Assets - Add -ERROR - Verify that user can select the depriciation category
+2019-04-26 17:46:01,499 -  Habitos - Assets -ERROR - browser gets valid ip address
+2019-04-26 17:46:01,796 -  Habitos - Assets -ERROR - Verify that if click facility menu it should opent the menu
+2019-04-26 17:46:03,809 -  Habitos - Assets -ERROR - Verify that if click asset menu it should redirect to related  screen
+2019-04-26 17:46:03,809 -  Habitos - Assets -ERROR - Verify that if the add button is present 
+2019-04-26 17:46:03,824 -  Habitos - Assets -ERROR - Asset is not successfully added
+2019-04-26 17:46:03,824 -  Habitos - Assets -ERROR - If click add button is should redirect to add new screen
+2019-04-26 17:47:32,648 -  Habitos - Assets -ERROR - browser gets valid ip address
+2019-04-26 17:47:32,942 -  Habitos - Assets -ERROR - Verify that if click facility menu it should opent the menu
+2019-04-26 17:47:34,953 -  Habitos - Assets -ERROR - Verify that if click asset menu it should redirect to related  screen
+2019-04-26 17:47:34,953 -  Habitos - Assets -ERROR - Verify that if the add button is present 
+2019-04-26 17:47:34,968 -  Habitos - Assets -ERROR - Asset is not successfully added
+2019-04-26 17:47:34,968 -  Habitos - Assets -ERROR - If click add button is should redirect to add new screen
+2019-04-26 17:47:35,172 -  Habitos - Assets - Add -ERROR - Verify that user can select the facility name
+2019-04-26 17:47:35,172 -  Habitos - Assets - Add -ERROR - Verify that user can select the Department
+2019-04-26 17:47:35,172 -  Habitos - Assets - Add -ERROR - Verify that user can select the depriciation category
+2019-04-26 17:47:37,173 -  Habitos - Assets - Add -ERROR - Verify that if click depriciation category it should get depriceation percentage automatically
+2019-04-26 17:47:39,188 -  Habitos - Assets - Add -INFO - if click transit it should select the ratio button
+2019-04-26 17:47:39,188 -  Habitos - Assets - Add -ERROR - Verify that user can select the depriciation category
+2019-04-26 17:47:39,188 -  Habitos - Assets - Add -ERROR - Verify that user can able to select the utensils name
+2019-04-26 17:47:39,188 -  Habitos - Assets - Add -ERROR - Verify that user enter the utensils body weights
+2019-04-26 17:47:39,188 -  Habitos - Assets - Add -ERROR - Verify that user can enter the  utensils Lid Weight
+2019-04-26 17:47:39,188 -  Habitos - Assets - Add -ERROR - Verify that user can enter the utensils price amount
+2019-04-26 17:47:39,188 -  Habitos - Assets - Add -ERROR - Verify that user can enter the utensils count
+2019-04-26 17:47:39,188 -  Habitos - Assets - Add -ERROR - User can able click the submit button
+2019-04-26 17:47:39,203 -  Habitos - Asset -  update -ERROR - Verify that can search the asset name using searching box
+2019-04-26 17:47:39,203 -  Habitos - Asset -  update -ERROR - If click asset status  button it should redirect to related screen
+2019-04-26 17:48:25,330 -  Habitos - Assets -ERROR - browser gets valid ip address
+2019-04-26 17:48:25,627 -  Habitos - Assets -ERROR - Verify that if click facility menu it should opent the menu
+2019-04-26 17:52:08,710 -  Habitos - Assets -INFO - browser gets open
+2019-04-26 17:52:17,358 -  Habitos - Assets -ERROR - Verify that if click facility menu it should opent the menu
+2019-04-26 17:52:49,073 -  Habitos - Assets -INFO - browser gets open
+2019-04-26 17:53:01,087 -  Habitos - Assets -INFO - Verify that if click facility menu it should opent the menu
+2019-04-26 17:53:07,389 -  Habitos - Assets -INFO - Verify that if click asset menu it should redirect to related  screen
+2019-04-26 17:53:17,517 -  Habitos - Assets -ERROR - Verify that user can able to select the utensils name
+2019-04-26 17:53:18,924 -  Habitos - Assets -INFO - Verify that if the page scroll is working
+2019-04-26 17:53:26,373 -  Habitos - Assets -ERROR - Verify that user can enter the utensil body wight 
+2019-04-26 17:53:26,388 -  Habitos - Assets -ERROR - Verify that user can enter the utensil Lid Weight
+2019-04-26 17:53:26,401 -  Habitos - Assets -ERROR - Verify that user can enter the  utensils price
+2019-04-26 17:53:26,417 -  Habitos - Assets -ERROR - Verify that user can enter the utensils count
+2019-04-26 17:53:26,432 -  Habitos - Assets -ERROR - User can able click the submit button
+2019-04-26 17:53:26,456 -  Habitos - Assets -ERROR - Asset is not successfully added
+2019-04-26 17:53:26,487 -  Habitos - Assets -ERROR - If click add button is should redirect to add new screen
+2019-04-26 17:53:26,695 -  Habitos - Assets - Add -ERROR - Verify that user can select the facility name
+2019-04-26 17:53:26,708 -  Habitos - Assets - Add -ERROR - Verify that user can select the Department
+2019-04-26 17:53:26,717 -  Habitos - Assets - Add -ERROR - Verify that user can select the depriciation category
+2019-04-26 17:54:13,305 -  Habitos - Assets -INFO - browser gets open
+2019-04-26 18:05:48,024 -  Habitos - Assets -ERROR - Verify that if click facility menu it should opent the menu
+2019-04-26 18:06:00,124 -  Habitos - Assets -ERROR - Verify that if click asset menu it should redirect to related  screen
+2019-04-26 18:06:10,245 -  Habitos - Assets -ERROR - Verify that if the add button is present 
+2019-04-26 18:06:19,999 -  Habitos - Assets -INFO - Verify that user can able to select the utensils name
+2019-04-26 18:06:20,570 -  Habitos - Assets -INFO - Verify that if the page scroll is working
+2019-04-26 18:06:21,618 -  Habitos - Assets -INFO - Verify that user can enter the utensil body wight 
+2019-04-26 18:06:22,648 -  Habitos - Assets -INFO - Verify that user can enter the utensil Lid Weight
+2019-04-26 18:06:23,596 -  Habitos - Assets -INFO - Verify that user can enter the  utensils price
+2019-04-26 18:06:24,488 -  Habitos - Assets -INFO - Verify that user can enter the utensils count
+2019-04-26 18:06:25,005 -  Habitos - Assets -INFO - User can able click the submit button
+2019-04-26 18:06:40,192 -  Habitos - Assets -ERROR - Asset is not successfully added
+2019-04-26 18:06:42,507 -  Habitos - Assets -INFO - If click add button is should redirect to add new screen
+2019-04-26 18:06:43,851 -  Habitos - Assets - Add -INFO - Verify that user can select the facility name
+2019-04-26 18:06:45,223 -  Habitos - Assets - Add -INFO - Verify that user can select the Department
+2019-04-26 18:06:47,457 -  Habitos - Assets - Add -INFO - Verify that if the user can select the depriciation category
+2019-04-26 18:06:50,079 -  Habitos - Assets - Add -INFO - Verify that if click depriciation category it should get depriceation percentage automatically
+2019-04-26 18:06:50,665 -  Habitos - Assets -INFO - browser gets open
+2019-04-26 18:06:52,659 -  Habitos - Assets - Add -INFO - if click transit it should select the ratio button
+2019-04-26 18:06:52,846 -  Habitos - Assets - Add -INFO - if click transit it should select the ratio button
+2019-04-26 18:06:54,033 -  Habitos - Assets - Add -INFO - Verify that user can select the depriciation category
+2019-04-26 18:06:56,661 -  Habitos - Assets - Add -INFO - Verify that user enter the utensils body weights
+2019-04-26 18:06:57,853 -  Habitos - Assets - Add -INFO - Verify that user can enter the  utensils Lid Weight
+2019-04-26 18:06:59,176 -  Habitos - Assets - Add -INFO - Verify that user can enter the utensils price amount
+2019-04-26 18:07:00,012 -  Habitos - Assets - Add -INFO - Verify that user can enter the utensils count
+2019-04-26 18:07:03,152 -  Habitos - Assets - Add -INFO - User can able click the submit button
+2019-04-26 18:07:03,588 -  Habitos - Assets -INFO - Verify that if click facility menu it should opent the menu
+2019-04-26 18:07:08,738 -  Habitos - Asset -  update -INFO - Verify that can search the asset name using searching box
+2019-04-26 18:07:10,361 -  Habitos - Assets -INFO - Verify that if click asset menu it should redirect to related  screen
+2019-04-26 18:07:11,439 -  Habitos - Asset -  update -INFO - If click asset status  button it should redirect to related screen
+2019-04-26 18:07:12,712 -  Habitos - Asset -  update -INFO - Verify that if click add button it should redirect to related screen
+2019-04-26 18:07:13,284 -  Habitos - Assets -INFO - Verify that if the add button is present 
+2019-04-26 18:07:15,667 -  Habitos - Asset -  update -INFO - Verify that user can select the utensils name
+2019-04-26 18:07:16,096 -  Habitos - Assets -INFO - Verify that user can able to select the utensils name
+2019-04-26 18:07:16,687 -  Habitos - Assets -INFO - Verify that if the page scroll is working
+2019-04-26 18:07:16,749 -  Habitos - Asset -  update -INFO - Verify that user can select the Kitchen  name
+2019-04-26 18:07:17,653 -  Habitos - Asset -  update -INFO - Verify that user can Enter the Count
+2019-04-26 18:07:17,703 -  Habitos - Assets -INFO - Verify that user can enter the utensil body wight 
+2019-04-26 18:07:18,759 -  Habitos - Assets -INFO - Verify that user can enter the utensil Lid Weight
+2019-04-26 18:07:19,098 -  Habitos - Asset -  update -INFO - Verify that user can Enter the Count
+2019-04-26 18:07:20,431 -  Habitos - Assets -INFO - Verify that user can enter the  utensils price
+2019-04-26 18:07:22,258 -  Habitos - Assets -INFO - Verify that user can enter the utensils count
+2019-04-26 18:07:22,330 -  Habitos - Asset -  update -INFO - Verify that user can Click the submit button
+2019-04-26 18:07:22,551 -  Habitos - Asset -  update -INFO - Verify that it successfully add the status
+2019-04-26 18:07:22,758 -  Habitos - Assets -INFO - User can able click the submit button
+2019-04-26 18:07:26,566 -  Habitos - Asset -  update -INFO - If click edit button it should redirect to related screen
+2019-04-26 18:07:30,374 -  Habitos - Asset -  update -INFO - Verify that user can change status maintenace into  Inhouse
+2019-04-26 18:07:32,751 -  Habitos - Asset -  update -INFO - Verify that if change the status it should affect the assets staus and count
+2019-04-26 18:07:34,735 -  Habitos - Assets -ERROR - Asset is not successfully added
+2019-04-26 18:07:34,830 -  Habitos - Assets -ERROR - If click add button is should redirect to add new screen
+2019-04-26 18:07:35,049 -  Habitos - Assets - Add -ERROR - Verify that user can select the facility name
+2019-04-26 18:07:35,065 -  Habitos - Assets - Add -ERROR - Verify that user can select the Department
+2019-04-26 18:07:35,096 -  Habitos - Assets - Add -ERROR - Verify that user can select the depriciation category
+2019-04-26 18:07:37,108 -  Habitos - Assets - Add -ERROR - Verify that if click depriciation category it should get depriceation percentage automatically
+2019-04-26 18:22:23,013 -  Habitos - Vessel Planner -ERROR - browser isn't open
+2019-04-26 18:22:23,323 -  Habitos - Vessel Planner -ERROR - Verify  that if click master menu it getting to collapse
+2019-04-26 18:22:51,113 -  Habitos - Vessel Planner -ERROR - browser isn't open
+2019-04-26 18:22:51,433 -  Habitos - Vessel Planner -ERROR - Verify  that if click master menu it getting to collapse
+2019-04-26 18:22:55,463 -  Habitos - Vessel Planner -ERROR - Verify that user can click the date into date picker
+2019-04-26 18:22:55,465 -  Habitos - Vessel Planner -ERROR - user can select the client type
+2019-04-26 18:22:55,466 -  Habitos - Vessel Planner -ERROR - user can select  the meal course
+2019-04-26 18:24:40,144 -  Habitos - Vessel Planner -INFO - Verify  that if click master menu it getting to collapse
+2019-04-26 18:24:48,468 -  Habitos - Vessel Planner -INFO - Verify that if click menu planner menu it should redirect to menu planner screen
+2019-04-26 18:24:51,870 -  Habitos - Vessel Planner -INFO - Verify that user can click the date into date picker
+2019-04-26 18:24:52,058 -  Habitos - Vessel Planner -ERROR - Verify that user can click the date into date picker
+2019-04-26 18:24:53,241 -  Habitos - Vessel Planner -INFO - user can select the client type
+2019-04-26 18:24:54,347 -  Habitos - Vessel Planner -INFO - user can select  the meal course
+2019-04-26 18:25:02,664 -  Habitos - Vessel Planner -ERROR - Verify the client datas is correct or not
+2019-04-26 18:25:04,701 -  Habitos - Vessel Planner -ERROR - Verify that user can select the particular utensils
+2019-04-26 18:25:04,733 -  Habitos - Vessel Planner -ERROR - Verify that user can select the particular utensils
+2019-04-26 18:25:04,748 -  Habitos - Vessel Planner -ERROR - Verify that user can select the Utensils Id's 
+2019-04-26 18:25:04,780 -  Habitos - Vessel Planner -ERROR - Verify that user can select the particular utensils
+2019-04-26 18:25:04,795 -  Habitos - Vessel Planner -ERROR - Verify that user can select the Utensils Id's 
+2019-04-26 18:25:04,826 -  Habitos - Vessel Planner -ERROR - Verify that user can select the particular utensils
+2019-04-26 18:25:04,842 -  Habitos - Vessel Planner -ERROR - Verify that user can select the Utensils Id's 
+2019-04-26 18:25:04,873 -  Habitos - Vessel Planner -ERROR - Verify that user can select the particular utensils
+2019-04-26 18:25:04,889 -  Habitos - Vessel Planner -ERROR - Verify that user can select the Utensils Id's 
+2019-04-26 18:25:04,920 -  Habitos - Vessel Planner -ERROR - Verify that if user can click the submit button
+2019-04-26 18:25:04,920 -  Habitos - Vessel Planner -ERROR - Can't able to planning the vessels
+2019-04-26 18:27:09,659 -  Habitos - Vessel Planner -INFO - Verify  that if click master menu it getting to collapse
+2019-04-26 18:27:14,665 -  Habitos - Vessel Planner -INFO - Verify that if click menu planner menu it should redirect to menu planner screen
+2019-04-26 18:27:17,779 -  Habitos - Vessel Planner -INFO - Verify that user can click the date into date picker
+2019-04-26 18:27:17,842 -  Habitos - Vessel Planner -ERROR - Verify that user can click the date into date picker
+2019-04-26 18:27:18,737 -  Habitos - Vessel Planner -INFO - user can select the client type
+2019-04-26 18:27:19,715 -  Habitos - Vessel Planner -INFO - user can select  the meal course
+2019-04-26 18:27:26,637 -  Habitos - Vessel Planner -INFO - Verify the client datas is correct or not
+2019-04-26 18:27:31,318 -  Habitos - Vessel Planner -INFO - Verify that user can select the particular utensils
+2019-04-26 18:27:31,341 -  Habitos - Vessel Planner -ERROR - Verify that user can select the particular utensils
+2019-04-26 18:27:31,354 -  Habitos - Vessel Planner -ERROR - Verify that user can select the Utensils Id's 
+2019-04-26 18:27:31,373 -  Habitos - Vessel Planner -ERROR - Verify that user can select the particular utensils
+2019-04-26 18:27:31,388 -  Habitos - Vessel Planner -ERROR - Verify that user can select the Utensils Id's 
+2019-04-26 18:27:31,407 -  Habitos - Vessel Planner -ERROR - Verify that user can select the particular utensils
+2019-04-26 18:27:31,417 -  Habitos - Vessel Planner -ERROR - Verify that user can select the Utensils Id's 
+2019-04-26 18:27:31,436 -  Habitos - Vessel Planner -ERROR - Verify that user can select the particular utensils
+2019-04-26 18:27:31,446 -  Habitos - Vessel Planner -ERROR - Verify that user can select the Utensils Id's 
+2019-04-26 18:27:31,469 -  Habitos - Vessel Planner -ERROR - Verify that if user can click the submit button
+2019-04-26 18:27:31,471 -  Habitos - Vessel Planner -ERROR - Can't able to planning the vessels
+2019-04-26 18:29:30,738 -  Habitos - Vessel Planner -INFO - Verify  that if click master menu it getting to collapse
+2019-04-26 18:29:35,659 -  Habitos - Vessel Planner -INFO - Verify that if click menu planner menu it should redirect to menu planner screen
+2019-04-26 18:29:39,025 -  Habitos - Vessel Planner -INFO - Verify that user can click the date into date picker
+2019-04-26 18:29:39,125 -  Habitos - Vessel Planner -ERROR - Verify that user can click the date into date picker
+2019-04-26 18:29:40,447 -  Habitos - Vessel Planner -INFO - user can select the client type
+2019-04-26 18:29:41,550 -  Habitos - Vessel Planner -INFO - user can select  the meal course
+2019-04-26 18:29:48,779 -  Habitos - Vessel Planner -INFO - Verify the client datas is correct or not
+2019-04-26 18:29:54,118 -  Habitos - Vessel Planner -INFO - Verify that user can select the particular utensils
+2019-04-26 18:29:54,149 -  Habitos - Vessel Planner -ERROR - Verify that user can select the particular utensils
+2019-04-26 18:29:54,161 -  Habitos - Vessel Planner -ERROR - Verify that user can select the Utensils Id's 
+2019-04-26 18:29:54,180 -  Habitos - Vessel Planner -ERROR - Verify that user can select the particular utensils
+2019-04-26 18:29:54,192 -  Habitos - Vessel Planner -ERROR - Verify that user can select the Utensils Id's 
+2019-04-26 18:29:54,210 -  Habitos - Vessel Planner -ERROR - Verify that user can select the particular utensils
+2019-04-26 18:29:54,224 -  Habitos - Vessel Planner -ERROR - Verify that user can select the Utensils Id's 
+2019-04-26 18:29:54,244 -  Habitos - Vessel Planner -ERROR - Verify that user can select the particular utensils
+2019-04-26 18:29:54,262 -  Habitos - Vessel Planner -ERROR - Verify that user can select the Utensils Id's 
+2019-04-26 18:29:54,290 -  Habitos - Vessel Planner -ERROR - Verify that if user can click the submit button
+2019-04-26 18:29:54,291 -  Habitos - Vessel Planner -ERROR - Can't able to planning the vessels
