@@ -35,6 +35,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.log4testng.Logger;
 import org.testng.annotations.BeforeTest;
 
@@ -52,7 +53,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
 
 public class Assets {
-	
+
 	WebDriver d;
 
 	static org.apache.log4j.Logger logger;
@@ -156,8 +157,7 @@ public class Assets {
 		}
 		 			   
 	}
-	
-   
+	   
 	// ADD ASSET - 1
 	
 	@Test(priority = 3)
@@ -221,11 +221,7 @@ public class Assets {
 			facility.sendKeys(Keys.ENTER);
 
 			facility.sendKeys(Keys.TAB);
-
-			Thread.sleep(200);
-
-			facility.sendKeys(Keys.TAB);
-			 
+ 
 			logger.info("Verify that user can select the facility name");
 			
 
@@ -314,13 +310,12 @@ public class Assets {
 
 		} else {
 
-			logger.error(
+			logger.info(
 					"Verify that if select depriciation category it should get depriceation percentage automatically");
 
 		}
 		
-		
-		
+				
 		// TRACKING Status
 
 		try {
@@ -338,7 +333,6 @@ public class Assets {
 		//	cate.sendKeys(Keys.TAB);
 
 			logger.info("if click transit it should select the ratio button");
-
 			
 
 		} catch (Exception e) {
@@ -385,15 +379,20 @@ public class Assets {
 
 			Thread.sleep(200);
 
-			WebElement vessel = d.findElement(By.xpath("//option[contains(text(),'30 Ltr Hot pack')]"));
+			/*
+			 * WebElement vessel =
+			 * d.findElement(By.xpath("//option[contains(text(),'30 Ltr Hot pack')]"));
+			 * 
+			 * vessel.click();
+			 */
 
-			vessel.click();
-
-			// ven.sendKeys("30");s
+			ven.sendKeys("30");
 
 			Thread.sleep(200);
 
-			// ven.sendKeys(Keys.ENTER);
+			ven.sendKeys(Keys.ENTER);
+
+			logger.info("Verify that user can able to select the utensils name");
 
 		}
 
@@ -402,13 +401,14 @@ public class Assets {
 			logger.error("Verify that user can able to select the utensils name");
 
 		}
-
 		
 		// BODY WEIGHT
 
 		try {
+			
+			Thread.sleep(200);
 
-			WebElement ven = d.findElement(By.xpath("//input[@id='utensil_tare_weight']"));
+			WebElement ven = d.findElement(By.id("utensil_tare_weight"));
 
 			Thread.sleep(200);
 
@@ -431,7 +431,7 @@ public class Assets {
 
 		try {
 
-			WebElement lid = d.findElement(By.xpath("//input[@id='utensil_lid_weight']"));
+			WebElement lid = d.findElement(By.id("utensil_lid_weight"));
 
 			Thread.sleep(200);
 
@@ -441,7 +441,7 @@ public class Assets {
 
 			Thread.sleep(200);
 
-			lid.sendKeys(Keys.TAB);
+			//	lid.sendKeys(Keys.TAB);
 			
 			logger.info("Verify that user can enter the utensil Lid Weight");
 
@@ -465,15 +465,15 @@ public class Assets {
 
 			ven.sendKeys(Keys.TAB);
 
-			Thread.sleep(200);
-
-			ven.sendKeys(Keys.TAB);
+			Thread.sleep(200); 
+			
+			logger.info("Verify that user can enter the  utensils price");
 
 		}
 
 		catch (Exception e) {
 
-			logger.error("Verify that user can able to select the utensils name");
+			logger.error("Verify that user can enter the  utensils price");
 
 		}
 
@@ -489,15 +489,15 @@ public class Assets {
 
 			ven.sendKeys(Keys.TAB);
 
-			Thread.sleep(200);
-
-			ven.sendKeys(Keys.TAB);
+			Thread.sleep(200); 
+			 
+			logger.info("Verify that user can enter the utensils count");
 
 		}
 
 		catch (Exception e) {
 
-			logger.error("Verify that user can able to select the utensils name");
+			logger.error("Verify that user can enter the utensils count");
 
 		}
 
@@ -509,13 +509,11 @@ public class Assets {
 
 			Thread.sleep(200);
 
-			if (submit.isDisplayed() && submit.isEnabled()) {
+			submit.isDisplayed();
 
-				submit.click();
+			submit.click();
 
-				logger.info("User can able click the submit button");
-
-			}
+			logger.info("User can able click the submit button");
 
 		}
 
