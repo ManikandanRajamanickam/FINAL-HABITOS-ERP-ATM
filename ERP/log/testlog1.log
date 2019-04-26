@@ -458,3 +458,43 @@ Session ID: d0d3491abb8e5d6ef9028eeef2b82639
 2019-04-26 10:26:20,667 [main] INFO  Habitos - DEPRICEATION - ADD - Verify that user can enter the depriciation percentage  in input field
 2019-04-26 10:26:21,573 [main] INFO  Habitos - DEPRICEATION - ADD - If click submit button it should redirect to index screen
 2019-04-26 10:26:21,683 [main] ERROR  Habitos - DEPRICEATION - ADD - Depriceation category  is successfully added
+2019-04-26 12:21:33,840 [main] INFO  Habitos - Assets - browser gets open
+2019-04-26 12:21:46,231 [main] INFO  Habitos - Assets - Verify that if click facility menu it should opent the menu
+2019-04-26 12:21:53,619 [main] INFO  Habitos - Assets - Verify that if click asset menu it should redirect to related  screen
+2019-04-26 12:21:55,689 [main] INFO  Habitos - Assets - Verify that if the add button is present 
+2019-04-26 12:21:57,615 [main] INFO  Habitos - Assets - If click add button is should redirect to add new screen
+2019-04-26 12:21:58,951 [main] INFO  Habitos - Assets - Add - Verify that user can select the facility name
+2019-04-26 12:21:59,786 [main] INFO  Habitos - Assets - Add - Verify that user can select the Department
+2019-04-26 12:22:01,332 [main] INFO  Habitos - Assets - Add - Verify that if the user can select the depriciation category
+2019-04-26 12:22:01,449 [main] ERROR  Habitos - Assets - Add - Verify that if select depriciation category it should get depriceation percentage automatically
+2019-04-26 12:22:03,910 [main] INFO  Habitos - Assets - Add - if click transit it should select the ratio button
+2019-04-26 12:22:04,690 [main] INFO  Habitos - Assets - Add - Verify that user can select the depriciation category
+2019-04-26 12:22:06,961 [main] INFO  Habitos - Assets - Add - Verify that user can enter the utensil body wight 
+2019-04-26 12:22:08,155 [main] INFO  Habitos - Assets - Add - Verify that user can enter the utensil Lid Weight
+2019-04-26 12:22:11,106 [main] INFO  Habitos - Assets - Add - User can able click the submit button
+2019-04-26 12:22:11,170 [main] ERROR  Habitos - Assets - Add - Asset is not successfully added
+2019-04-26 12:22:11,202 [main] ERROR  Habitos - Assets - Add - If click add button is should redirect to add new screen
+2019-04-26 12:22:11,420 [main] ERROR  Habitos - Assets - Add - Verify that user can select the facility name
+2019-04-26 12:22:11,436 [main] ERROR  Habitos - Assets - Add - Verify that user can select the Department
+2019-04-26 12:22:11,451 [main] ERROR  Habitos - Assets - Add - Verify that user can select the depriciation category
+2019-04-26 12:22:13,479 [main] ERROR  Habitos - Assets - Add - Verify that if click depriciation category it should get depriceation percentage automatically
+2019-04-26 12:22:15,509 [main] INFO  Habitos - Assets - Add - if click transit it should select the ratio button
+2019-04-26 12:22:15,525 [main] ERROR  Habitos - Assets - Add - Verify that user can select the depriciation category
+2019-04-26 12:22:15,541 [main] ERROR  Habitos - Assets - Add - Verify that user can able to select the utensils name
+2019-04-26 12:22:15,557 [main] ERROR  Habitos - Assets - Add - Verify that user enter the utensils body weights
+2019-04-26 12:22:15,573 [main] ERROR  Habitos - Assets - Add - Verify that user can enter the  utensils Lid Weight
+2019-04-26 12:22:15,588 [main] ERROR  Habitos - Assets - Add - Verify that user can enter the utensils price amount
+2019-04-26 12:22:15,604 [main] ERROR  Habitos - Assets - Add - Verify that user can enter the utensils count
+2019-04-26 12:22:15,619 [main] ERROR  Habitos - Assets - Add - User can able click the submit button
+2019-04-26 12:22:15,651 [main] ERROR  Habitos - Asset -  update - Verify that can search the asset name using searching box
+2019-04-26 12:22:15,666 [main] ERROR  Habitos - Asset -  update - If click asset status  button it should redirect to related screen
+2019-04-26 12:22:15,885 [main] ERROR  Habitos - Asset -  update - Verify that if click add button it should redirect to related screen
+2019-04-26 12:22:15,900 [main] ERROR  Habitos - Asset -  update - Verify that user can select the utensils name
+2019-04-26 12:22:15,916 [main] ERROR  Habitos - Asset -  update - Verify that user can select the Kitchen  name
+2019-04-26 12:22:15,931 [main] ERROR  Habitos - Asset -  update - Verify that user can Enter the Count
+2019-04-26 12:22:15,947 [main] ERROR  Habitos - Asset -  update - Verify that user can Enter the Count
+2019-04-26 12:22:15,963 [main] ERROR  Habitos - Asset -  update - Verify that user can Click the submit button
+2019-04-26 12:22:15,978 [main] ERROR  Habitos - Asset -  update - Verify that it successfully add the status
+2019-04-26 12:22:16,197 [main] ERROR  Habitos - Asset -  update - If click edit button it should redirect to related screen
+2019-04-26 12:22:18,225 [main] ERROR  Habitos - Asset -  update - Verify that user can change status maintenace into  Inhouse
+2019-04-26 12:22:18,240 [main] ERROR  Habitos - Asset -  update - Verify that if change the status it should affect the assets staus and count

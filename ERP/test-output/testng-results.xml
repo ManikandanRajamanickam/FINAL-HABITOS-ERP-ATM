@@ -1,33 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="45199" started-at="2019-04-26T04:55:38Z" finished-at="2019-04-26T04:56:23Z">
+  <suite name="Default suite" duration-ms="53551" started-at="2019-04-26T06:51:26Z" finished-at="2019-04-26T06:52:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="45199" started-at="2019-04-26T04:55:38Z" finished-at="2019-04-26T04:56:23Z">
-      <class name="Idlidabba.ERP.Depriceation">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Idlidabba.ERP.Depriceation@c038203]" name="beforeTest" is-config="true" duration-ms="9834" started-at="2019-04-26T10:25:38Z" finished-at="2019-04-26T10:25:48Z">
+    <test name="Default test" duration-ms="53551" started-at="2019-04-26T06:51:26Z" finished-at="2019-04-26T06:52:20Z">
+      <class name="Idlidabba.ERP.Assets">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Idlidabba.ERP.Assets@cc285f4]" name="beforeTest" is-config="true" duration-ms="8858" started-at="2019-04-26T12:21:26Z" finished-at="2019-04-26T12:21:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="Valid_Login()[pri:1, instance:Idlidabba.ERP.Depriceation@c038203]" name="Valid_Login" duration-ms="8471" started-at="2019-04-26T10:25:48Z" finished-at="2019-04-26T10:25:56Z">
+        <test-method status="PASS" signature="Valid_Login()[pri:1, instance:Idlidabba.ERP.Assets@cc285f4]" name="Valid_Login" duration-ms="8535" started-at="2019-04-26T12:21:35Z" finished-at="2019-04-26T12:21:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Valid_Login -->
-        <test-method status="PASS" signature="depriceation()[pri:2, instance:Idlidabba.ERP.Depriceation@c038203]" name="depriceation" duration-ms="5009" started-at="2019-04-26T10:25:56Z" finished-at="2019-04-26T10:26:01Z">
+        <test-method status="PASS" signature="Assets()[pri:2, instance:Idlidabba.ERP.Assets@cc285f4]" name="Assets" duration-ms="9375" started-at="2019-04-26T12:21:44Z" finished-at="2019-04-26T12:21:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- depriceation -->
-        <test-method status="PASS" signature="add_depriceation()[pri:3, instance:Idlidabba.ERP.Depriceation@c038203]" name="add_depriceation" duration-ms="19630" started-at="2019-04-26T10:26:01Z" finished-at="2019-04-26T10:26:21Z">
+        </test-method> <!-- Assets -->
+        <test-method status="PASS" signature="Add_Assets()[pri:3, instance:Idlidabba.ERP.Assets@cc285f4]" name="Add_Assets" duration-ms="17487" started-at="2019-04-26T12:21:53Z" finished-at="2019-04-26T12:22:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- add_depriceation -->
-        <test-method status="PASS" signature="add_depriceation_values()[pri:4, instance:Idlidabba.ERP.Depriceation@c038203]" name="add_depriceation_values" duration-ms="94" started-at="2019-04-26T10:26:21Z" finished-at="2019-04-26T10:26:21Z">
+        </test-method> <!-- Add_Assets -->
+        <test-method status="PASS" signature="asset_value()[pri:4, instance:Idlidabba.ERP.Assets@cc285f4]" name="asset_value" duration-ms="60" started-at="2019-04-26T12:22:11Z" finished-at="2019-04-26T12:22:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- add_depriceation_values -->
-        <test-method status="FAIL" signature="afterTest()[pri:0, instance:Idlidabba.ERP.Depriceation@c038203]" name="afterTest" is-config="true" duration-ms="2027" started-at="2019-04-26T10:26:21Z" finished-at="2019-04-26T10:26:23Z">
+        </test-method> <!-- asset_value -->
+        <test-method status="PASS" signature="Add_Assets_2()[pri:5, instance:Idlidabba.ERP.Assets@cc285f4]" name="Add_Assets_2" duration-ms="4449" started-at="2019-04-26T12:22:11Z" finished-at="2019-04-26T12:22:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_Assets_2 -->
+        <test-method status="PASS" signature="Asset_Edit()[pri:6, instance:Idlidabba.ERP.Assets@cc285f4]" name="Asset_Edit" duration-ms="359" started-at="2019-04-26T12:22:15Z" finished-at="2019-04-26T12:22:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Asset_Edit -->
+        <test-method status="PASS" signature="assets_Edits()[pri:7, instance:Idlidabba.ERP.Assets@cc285f4]" name="assets_Edits" duration-ms="219" started-at="2019-04-26T12:22:15Z" finished-at="2019-04-26T12:22:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assets_Edits -->
+        <test-method status="PASS" signature="Asset_Trackings1()[pri:8, instance:Idlidabba.ERP.Assets@cc285f4]" name="Asset_Trackings1" duration-ms="2043" started-at="2019-04-26T12:22:16Z" finished-at="2019-04-26T12:22:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Asset_Trackings1 -->
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:Idlidabba.ERP.Assets@cc285f4]" name="afterTest" is-config="true" duration-ms="2048" started-at="2019-04-26T12:22:18Z" finished-at="2019-04-26T12:22:20Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[chrome not reachable
@@ -37,8 +53,8 @@ Command duration or timeout: 0 milliseconds
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'ADMIN-PC', ip: '192.168.0.111', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\altius\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56585}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
-Session ID: 0cf110efe37228224e37be4ed909d760]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\altius\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62452}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 2c278cab7e772d66814c94f48f6539fb]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
@@ -48,8 +64,8 @@ Command duration or timeout: 0 milliseconds
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'ADMIN-PC', ip: '192.168.0.111', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\altius\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56585}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
-Session ID: 0cf110efe37228224e37be4ed909d760
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\altius\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62452}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 2c278cab7e772d66814c94f48f6539fb
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -64,7 +80,7 @@ Session ID: 0cf110efe37228224e37be4ed909d760
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
 	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)
-	at Idlidabba.ERP.Depriceation.afterTest(Depriceation.java:329)
+	at Idlidabba.ERP.Assets.afterTest(Assets.java:1290)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -94,7 +110,7 @@ Session ID: 0cf110efe37228224e37be4ed909d760
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- Idlidabba.ERP.Depriceation -->
+      </class> <!-- Idlidabba.ERP.Assets -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -33,6 +33,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.log4testng.Logger;
 import org.testng.annotations.BeforeTest;
 
@@ -160,7 +162,7 @@ public class Assets {
 	
 	@Test(priority = 3)
 
-	public void Add_Assets() {
+	public void Add_Assets() throws InterruptedException {
 
 		// Add Assets
 
@@ -179,8 +181,7 @@ public class Assets {
 			logger.error("Verify that if the add button is present ");
 
 		}
-	
-		
+			
 		d.get("http://192.168.1.230:4000/utensils/new");
 		
 		String url = "http://192.168.1.230:4000/utensils/new";
@@ -299,32 +300,27 @@ public class Assets {
 		}
 
 		// DEP Percentage
+		
+		WebElement pervalue = d.findElement(By.xpath("//input[@id='dep_per']"));
 
-		try {
+		String values = "25.0";
 
-			Thread.sleep(2000);
-
-			WebElement pervalue = d.findElement(By.xpath("//input[@id='dep_per']"));
-
-			String values = "25.0";
+		if (pervalue.getText().equals(values)) {
 
 			Thread.sleep(200);
 
-			if (pervalue.getText().equals(values)) {
+			logger.info(
+					"Verify that if select depriciation category it should get depriceation percentage automatically");
 
-				logger.info(
-						"Verify that if click depriciation category it should get depriceation percentage automatically");
-			}
-
-		}
-
-		catch (Exception e) {
+		} else {
 
 			logger.error(
-					"Verify that if click depriciation category it should get depriceation percentage automatically");
+					"Verify that if select depriciation category it should get depriceation percentage automatically");
 
 		}
-
+		
+		
+		
 		// TRACKING Status
 
 		try {
@@ -333,19 +329,21 @@ public class Assets {
 
 			WebElement cate = d.findElement(By.xpath("//span[contains(text(),'Transit')]"));
 
-			cate.isDisplayed();
+			 cate.isDisplayed();
 
 			cate.click();
 
 			Thread.sleep(200);
+			
+		//	cate.sendKeys(Keys.TAB);
 
 			logger.info("if click transit it should select the ratio button");
 
-			cate.sendKeys(Keys.TAB);
+			
 
 		} catch (Exception e) {
 
-			logger.info("if click transit it should select the ratio button");
+			logger.error("if click transit it should select the ratio button");
 
 		}
 
@@ -365,7 +363,7 @@ public class Assets {
 
 			logger.info("Verify that user can select the depriciation category");
 
-			ven.sendKeys(Keys.TAB);
+			//ven.sendKeys(Keys.TAB);
 
 			Thread.sleep(200);
 
@@ -381,29 +379,21 @@ public class Assets {
 
 			WebElement ven = d.findElement(By.xpath("//select[@id='utensil_utensilname_id']"));
 
-			 ven.isDisplayed();
+			ven.isDisplayed();
 
-				ven.click();
+			ven.click();
 
-				Thread.sleep(200);
+			Thread.sleep(200);
 
-				ven.sendKeys("30");
+			WebElement vessel = d.findElement(By.xpath("//option[contains(text(),'30 Ltr Hot pack')]"));
 
-				Thread.sleep(200);
+			vessel.click();
 
-				ven.sendKeys(Keys.ENTER);
+			// ven.sendKeys("30");s
 
-				WebElement uname = d.findElement(By.id("utensil_utensilname_id"));
+			Thread.sleep(200);
 
-				String utensilname = "30 Ltr Hot pack";
-
-				if (uname.getText().equals(utensilname)) {
-
-					uname.click();
-
-					logger.info("Verify that user can able to select the utensils name");
-
-				}
+			// ven.sendKeys(Keys.ENTER);
 
 		}
 
@@ -413,6 +403,7 @@ public class Assets {
 
 		}
 
+		
 		// BODY WEIGHT
 
 		try {
@@ -425,14 +416,17 @@ public class Assets {
 
 			ven.sendKeys("750 g");
 
+			logger.info("Verify that user can enter the utensil body wight ");
+			
 		}
 
 		catch (Exception e) {
 
-			logger.error("Verify that user can able to select the utensils name");
+			logger.error("Verify that user can enter the utensil body wight ");
 
 		}
 
+		
 		// Lid Weight
 
 		try {
@@ -448,12 +442,14 @@ public class Assets {
 			Thread.sleep(200);
 
 			lid.sendKeys(Keys.TAB);
+			
+			logger.info("Verify that user can enter the utensil Lid Weight");
 
 		}
 
 		catch (Exception e) {
 
-			logger.error("Verify that user can able to select the utensils name");
+			logger.error("Verify that user can enter the utensil Lid Weight");
 
 		}
 
@@ -815,12 +811,14 @@ public class Assets {
 			ven.click();
 
 			ven.sendKeys("750 g");
+			
+			logger.info("Verify that user enter the utensils body weights");
 
 		}
 
 		catch (Exception e) {
 
-			logger.error("Verify that user can able to select the utensils name");
+			logger.error("Verify that user enter the utensils body weights");
 
 		}
 
@@ -839,12 +837,14 @@ public class Assets {
 			Thread.sleep(200);
 
 			lid.sendKeys(Keys.TAB);
+			
+			logger.info("Verify that user can enter the  utensils Lid Weight");
 
 		}
 
 		catch (Exception e) {
 
-			logger.error("Verify that user can able to select the utensils name");
+			logger.error("Verify that user can enter the  utensils Lid Weight");
 
 		}
 
@@ -863,12 +863,14 @@ public class Assets {
 			Thread.sleep(200);
 
 			ven.sendKeys(Keys.TAB);
+			
+			logger.info("Verify that user can enter the utensils price amount");
 
 		}
 
 		catch (Exception e) {
 
-			logger.error("Verify that user can able to select the utensils name");
+			logger.error("Verify that user can enter the utensils price amount");
 
 		}
 
@@ -887,15 +889,18 @@ public class Assets {
 			Thread.sleep(200);
 
 			ven.sendKeys(Keys.TAB);
+			
+			logger.info("Verify that user can enter the utensils count");
 
 		}
 
 		catch (Exception e) {
 
-			logger.error("Verify that user can able to select the utensils name");
+			logger.error("Verify that user can enter the utensils count");
 
 		}
 
+		
 		// SUBMIT
 
 		try {
@@ -1159,8 +1164,7 @@ public class Assets {
 	 
 	 Thread.sleep(200);
 	 
-	 WebElement filter =
-	 d.findElement(By.xpath("//td[contains(text(),'Maintainence')]"));
+	 WebElement filter = d.findElement(By.xpath("//td[contains(text(),'Maintainence')]"));
 	 
 	 filter.click();
 	 
@@ -1173,7 +1177,6 @@ public class Assets {
 	 logger.info("If click edit button it should redirect to related screen");
 	 
 	 Thread.sleep(200);
-	 
 	 
 	 
 	 } catch (Exception e) {
