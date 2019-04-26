@@ -29,6 +29,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.util.Date;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
@@ -204,11 +205,11 @@ import org.testng.annotations.AfterTest;
 			
 			currentdate.click();
 			
-			System.out.println(currentdate); 
+			//System.out.println(currentdate); 
 			
 			logger.info("Verify that user can click the date into date picker");
 
-			currentdate.sendKeys(Keys.TAB);
+			//currentdate.sendKeys(Keys.TAB);
 
 			} catch (Exception e) {
 
