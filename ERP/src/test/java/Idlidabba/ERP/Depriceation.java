@@ -24,6 +24,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 
 import java.io.File;
@@ -182,6 +183,10 @@ public class Depriceation {
 			Thread.sleep(200);
 			
 			depet.sendKeys(Keys.TAB);
+			
+			Thread.sleep(200);
+			
+			depet.sendKeys(Keys.TAB);
 
 		logger.info("Verify that user can enter the depriciation category in input field");
 		}
@@ -196,7 +201,7 @@ public class Depriceation {
 			
 			Thread.sleep(200);
 			
-			WebElement dpercent = d.findElement(By.xpath("//input[@id='depriciation_category_depreciation_percentage']"));
+			WebElement dpercent = d.findElement(By.id("depriciation_category_depreciation_percentage"));
 
 			dpercent.click();
 
@@ -211,8 +216,6 @@ public class Depriceation {
 			File screenshotFile = ((TakesScreenshot) d).getScreenshotAs(OutputType.FILE);
 
 			FileUtils.copyFile(screenshotFile, new File("C:\\Screenshots\\depri.jpg"));
-
-			
 			
 			logger.error("Verify that user can enter the depriciation percentage in input field");
 		}
