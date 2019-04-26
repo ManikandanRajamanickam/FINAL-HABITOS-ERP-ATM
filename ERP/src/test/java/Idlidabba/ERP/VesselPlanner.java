@@ -618,24 +618,21 @@ import org.testng.annotations.AfterTest;
 		  
 		
   @BeforeTest
-  
   public void beforeTest() { 
 
-		try {
-		 
-			logger = logger.getLogger(" Habitos - Vessel Planner");
+	  try {
+
+			logger = logger.getLogger(" Habitos - Assets");
 
 			PropertyConfigurator.configure("log4jproperties.txt");
 
 			Thread.sleep(100);
 
-			System.setProperty("webdriver.chrome.driver", "..//ERP//resources//Latest_driver//chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "..//ERP//resources//chromedriver.exe");
 
 			d = new ChromeDriver();
 
-			// logger.info("browser gets open");
-
-			Thread.sleep(1000);
+			logger.info("browser gets open");
 
 			d.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -643,15 +640,11 @@ import org.testng.annotations.AfterTest;
 
 			d.get("http://192.168.1.230:4000/");
 
-			// logger.info("browser gets valid ip address");
+		} catch (Exception e) {
+
+			logger.error("browser gets valid ip address");
 
 		}
-
-		catch (Exception e) {
-
-			logger.error("browser isn't open");
-		}
-
   }
 
   @AfterTest 
