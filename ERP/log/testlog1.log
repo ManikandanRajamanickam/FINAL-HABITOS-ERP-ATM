@@ -749,3 +749,24 @@ Session ID: d0d3491abb8e5d6ef9028eeef2b82639
 2019-04-26 19:27:47,419 [main] ERROR  Habitos - Assets - Verify that user can select the Utensils Id's 
 2019-04-26 19:27:47,466 [main] ERROR  Habitos - Assets - Verify that if user can click the submit button
 2019-04-26 19:27:47,466 [main] ERROR  Habitos - Assets - Can't able to planning the vessels
+2019-04-27 10:22:14,692 [main] ERROR  Habitos - Cook Sheet - verify that if click master menu it should open
+2019-04-27 10:22:17,715 [main] ERROR  Habitos - Cook Sheet - Verify that if click cook sheet it should redirect to related  screen
+2019-04-27 10:22:18,739 [main] ERROR  Habitos - Cook Sheet - Verify that if the cook sheet contain the values
+2019-04-27 10:22:19,749 [main] ERROR  Habitos - Cook Sheet - Verify that if the receipe1 name is correctly displayed in cook sheet
+2019-04-27 10:22:20,956 [main] ERROR  Habitos - Cook Sheet - Verify that if the receipe2 name is correctly displayed in cook sheet
+2019-04-27 10:22:22,163 [main] ERROR  Habitos - Cook Sheet - Verify that if the receipe3 name is correctly displayed in cook sheet
+2019-04-27 10:22:32,361 [main] ERROR  Habitos - Cook Sheet - verify that if click master menu it should open
+2019-04-27 10:22:35,395 [main] ERROR  Habitos - Cook Sheet - Verify that if click cook sheet it should redirect to related  screen
+2019-04-27 10:22:36,410 [main] ERROR  Habitos - Cook Sheet - Verify that if the cook sheet contain the values
+2019-04-27 10:22:37,418 [main] ERROR  Habitos - Cook Sheet - Verify that if the receipe1 name is correctly displayed in cook sheet
+2019-04-27 10:22:38,624 [main] ERROR  Habitos - Cook Sheet - Verify that if the receipe2 name is correctly displayed in cook sheet
+2019-04-27 10:22:39,830 [main] ERROR  Habitos - Cook Sheet - Verify that if the receipe3 name is correctly displayed in cook sheet
+2019-04-27 10:24:15,281 [main] INFO  Habitos - Cook Sheet - browser gets valid ip address
+2019-04-27 10:24:29,588 [main] INFO  Habitos - Cook Sheet - verify that if click master menu it should open
+2019-04-27 10:24:41,129 [main] INFO  Habitos - Cook Sheet - Verify that if click cook sheet it should redirect to related  screen
+2019-04-27 10:24:42,295 [main] INFO  Habitos - Cook Sheet - Verify that if the date is presented in cook sheet
+2019-04-27 10:24:42,835 [main] INFO  Habitos - Cook Sheet - Verify that if the client name is correctly displayed
+2019-04-27 10:24:43,384 [main] INFO  Habitos - Cook Sheet - Verify that if the meal time is correctly displayed
+2019-04-27 10:24:43,895 [main] INFO  Habitos - Cook Sheet - Verify that if the receipe1 name is correctly displayed in cook sheet
+2019-04-27 10:24:54,898 [main] ERROR  Habitos - Cook Sheet - Verify that if the receipe2 name is correctly displayed in cook sheet
+2019-04-27 10:25:04,307 [main] ERROR  Habitos - Cook Sheet - Verify that if the receipe3 name is correctly displayed in cook sheet

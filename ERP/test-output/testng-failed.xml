@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Idlidabba.ERP.Assets">
+      <class name="Idlidabba.ERP.Cooksheet">
         <methods>
-          <include name="beforeTest"/>
           <include name="afterTest"/>
+          <include name="beforeTest"/>
           <include name="Valid_Login"/>
         </methods>
-      </class> <!-- Idlidabba.ERP.Assets -->
+      </class> <!-- Idlidabba.ERP.Cooksheet -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
